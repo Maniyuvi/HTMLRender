@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<script src="/packs/js/error-reporting-610a77ec1be2e2245d2b.js"></script>
+<script type="importmap" data-turbo-track="reload">{
+  "imports": {
+    "application": "/assets/application-43e67554b65a3d71cb2cc4e0bfb000eab664a98f2dacc01d456aeb8c49e7aab2.js",
+    "@hotwired/turbo-rails": "/assets/@hotwired--turbo-rails-adc29aa8f8a030ffa92ade5b553f89b1a4ae10676c3e4a0b01d9748c133b3942.js",
+    "@hotwired/turbo": "/assets/@hotwired--turbo-b61d77ef2858c8bd38af6c8930b19807d2005934fb8ce48bc2446277639325bf.js",
+    "@rails/actioncable/src": "/assets/@rails--actioncable--src-afd872b90019e6e7e78bc2dccb876c7cb89626d3f9bedc1c781579eae9b8a05b.js",
+    "@hotwired/stimulus": "/assets/stimulus.min-d0cc09fde2fe26e659ee153c59c6838a8d8cbc9bb2ca9116a7d5c0cb6d8c2def.js",
+    "@hotwired/stimulus-loading": "/assets/stimulus-loading-b3a1143d54e5e70612a391e9046013c47906eea23924a86ca6aaf46b77c383f9.js",
+    "controllers/application": "/assets/controllers/application-412b06f3638c99a754e598dabb79f85f16c261c52f019b2f412934dc0bb86071.js",
+    "controllers/button_link_controller": "/assets/controllers/button_link_controller-3c8b84956078dc6e943a3c0443fe75d00da028768915a81a8cb05125f2817415.js",
+    "controllers": "/assets/controllers/index-b3f0ee67c2a150ddd7258bd94e78ae00fa1a134507f969aceb055bb08f678c6d.js",
+    "controllers/modal_controller": "/assets/controllers/modal_controller-6c969d7c3248e7b6310fd85cc94377ad8fefa6475849d91ad3813c37ae3066cf.js",
+    "controllers/sfdc_product_links_controller": "/assets/controllers/sfdc_product_links_controller-35d937002aa5afce0e47eee98354e2f8efd021b85e264d014166026798abeed4.js"
+  }
+}</script>
+<link rel="modulepreload" href="/assets/application-43e67554b65a3d71cb2cc4e0bfb000eab664a98f2dacc01d456aeb8c49e7aab2.js">
+<link rel="modulepreload" href="/assets/@hotwired--turbo-rails-adc29aa8f8a030ffa92ade5b553f89b1a4ae10676c3e4a0b01d9748c133b3942.js">
+<link rel="modulepreload" href="/assets/@hotwired--turbo-b61d77ef2858c8bd38af6c8930b19807d2005934fb8ce48bc2446277639325bf.js">
+<link rel="modulepreload" href="/assets/@rails--actioncable--src-afd872b90019e6e7e78bc2dccb876c7cb89626d3f9bedc1c781579eae9b8a05b.js">
+<link rel="modulepreload" href="/assets/stimulus.min-d0cc09fde2fe26e659ee153c59c6838a8d8cbc9bb2ca9116a7d5c0cb6d8c2def.js">
+<link rel="modulepreload" href="/assets/stimulus-loading-b3a1143d54e5e70612a391e9046013c47906eea23924a86ca6aaf46b77c383f9.js">
+<link rel="modulepreload" href="/assets/controllers/application-412b06f3638c99a754e598dabb79f85f16c261c52f019b2f412934dc0bb86071.js">
+<link rel="modulepreload" href="/assets/controllers/button_link_controller-3c8b84956078dc6e943a3c0443fe75d00da028768915a81a8cb05125f2817415.js">
+<link rel="modulepreload" href="/assets/controllers/index-b3f0ee67c2a150ddd7258bd94e78ae00fa1a134507f969aceb055bb08f678c6d.js">
+<link rel="modulepreload" href="/assets/controllers/modal_controller-6c969d7c3248e7b6310fd85cc94377ad8fefa6475849d91ad3813c37ae3066cf.js">
+<link rel="modulepreload" href="/assets/controllers/sfdc_product_links_controller-35d937002aa5afce0e47eee98354e2f8efd021b85e264d014166026798abeed4.js">
+<script type="module">import "application"</script>
+<!-- = OneTrust Cookies Consent Notice -->
+<script src="/assets/cookie_consent-8c8312a57ff2dee1287aa6cb165f161b18dfe6c37fbb3185b3d0075550244858.js"></script>
+<script src="https://a.sfdcstatic.com/digital/one-trust/core/stable/scripttemplates/otSDKStub.js" crossorigin="" data-domain-script="8e783e8c-0ad0-475d-8fca-4a03afa0a02a" async="async"></script>
+
+<meta content='#ffffff' name='msapplication-TileColor'>
+<meta content='browserconfig.xml' name='msapplication-config'>
+<meta content='#ffffff' name='theme-color'>
+<link href='/apple-touch-icon-57x57.png' rel='apple-touch-icon' sizes='57x57'>
+<link href='/apple-touch-icon-60x60.png' rel='apple-touch-icon' sizes='60x60'>
+<link href='/apple-touch-icon-72x72.png' rel='apple-touch-icon' sizes='72x72'>
+<link href='/apple-touch-icon-76x76.png' rel='apple-touch-icon' sizes='76x76'>
+<link href='/apple-touch-icon-114x114.png' rel='apple-touch-icon' sizes='114x114'>
+<link href='/apple-touch-icon-120x120.png' rel='apple-touch-icon' sizes='120x120'>
+<link href='/apple-touch-icon-144x144.png' rel='apple-touch-icon' sizes='144x144'>
+<link href='/apple-touch-icon-152x152.png' rel='apple-touch-icon' sizes='152x152'>
+<link href='/apple-touch-icon-180x180.png' rel='apple-touch-icon' sizes='180x180'>
+<link href='/android-chrome-192x192.png' rel='icon' sizes='192x192' type='image/png'>
+<link href='/site.webmanifest' rel='manifest'>
+<link color='#ffffff' href='/safari-pinned-tab.svg' rel='mask-icon'>
+<link href='/favicon-32x32.png' rel='icon' sizes='32x32' type='image/png'>
+<link href='/favicon-16x16.png' rel='icon' sizes='16x16' type='image/png'>
+<link href='/favicon.ico' rel='shortcut icon'>
+
+<title>Configure an Agentforce Service Agent | Salesforce Trailhead</title>
+<meta name="description" content="Trailhead, the fun way to learn Salesforce">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@trailhead">
+<meta property="fb:app_id" content="140586622674265">
+<meta property="og:site_name" content="Trailhead">
+<meta property="og:title" content="Configure an Agentforce Service Agent | Salesforce Trailhead">
+<meta property="og:image" content="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/projects/quick-start-build-your-first-agent-with-agentforce/e395818cbaaa3c9d8bc55da6d497bca2_badge.png">
+<meta property="og:image:url" content="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/projects/quick-start-build-your-first-agent-with-agentforce/e395818cbaaa3c9d8bc55da6d497bca2_badge.png">
+<meta property="og:image:height" content="250">
+<meta property="og:image:width" content="250">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://trailhead.salesforce.com/content/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent">
+<meta name="url" content="https://trailhead.salesforce.com/content/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent">
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="OxyQge_27fx4vfPQmfjR2JIVLLzsC-RZkUQDqi1_kJiUQVaqzt2_jNCH0_6LCfm8uWAzdms77e4z9GW3fh5ydQ" />
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRBR-b554e5db741e07abbb3","applicationID":"506536273","transactionName":"cFxaREcJCVsARk4TWFpHRx9GDgpA","queueTime":1,"applicationTime":214,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.nr-data.net"]},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"594513438",accountID:"533461",trustKey:"194015",xpid:"UQUEVVBSGwYAUlRRAQMAVQ==",licenseKey:"NRBR-b554e5db741e07abbb3",applicationID:"506536273"};;/*! For license information please see nr-loader-spa-1.278.3.min.js.LICENSE.txt */
+(()=>{var e,t,r={8122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{if(null===e[a]){r[a]=null;continue}Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},2555:(e,t,r)=>{"use strict";r.d(t,{Vp:()=>c,fn:()=>s,x1:()=>u});var n=r(384),i=r(8122);const o={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){try{const t=c(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}function c(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function u(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.a)(t,o);const r=(0,n.nY)(e);r&&(r.info=a[e])}},9417:(e,t,r)=>{"use strict";r.d(t,{D0:()=>p,gD:()=>m,xN:()=>g});var n=r(3333),i=r(993);const o=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var a=r(2614),s=r(944),c=r(384),u=r(8122);const d="[data-nr-mask]",l=()=>{const e={feature_flags:[],experimental:{marks:!1,measures:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0,level:i.p_.INFO},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{get capture_marks(){return e.feature_flags.includes(n.$v.MARKS)||e.experimental.marks},set capture_marks(t){e.experimental.marks=t},get capture_measures(){return e.feature_flags.includes(n.$v.MEASURES)||e.experimental.measures},set capture_measures(t){e.experimental.measures=t},resources:{get enabled(){return e.feature_flags.includes(n.$v.RESOURCES)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:a.wk,inactiveMs:a.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){o(t)?e.mask_selector="".concat(t,",").concat(d):""===t||null===t?e.mask_selector=d:(0,s.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){o(t)?e.block_selector+=",".concat(t):""!==t&&(0,s.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,s.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},spa:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0}}},f={},h="All configuration objects require an agent identifier!";function p(e){if(!e)throw new Error(h);if(!f[e])throw new Error("Configuration for ".concat(e," was never set"));return f[e]}function g(e,t){if(!e)throw new Error(h);f[e]=(0,u.a)(t,l());const r=(0,c.nY)(e);r&&(r.init=f[e])}function m(e,t){if(!e)throw new Error(h);var r=p(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}},5603:(e,t,r)=>{"use strict";r.d(t,{a:()=>c,o:()=>s});var n=r(384),i=r(8122);const o={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},a={};function s(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!a[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");a[e]=(0,i.a)(t,o);const r=(0,n.nY)(e);r&&(r.loader_config=a[e])}},3371:(e,t,r)=>{"use strict";r.d(t,{V:()=>f,f:()=>l});var n=r(8122),i=r(384),o=r(6154),a=r(9324);let s=0;const c={buildEnv:a.F3,distMethod:a.Xs,version:a.xv,originTime:o.WN},u={customTransaction:void 0,disabled:!1,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,onerror:void 0,ptid:void 0,releaseIds:{},appMetadata:{},session:void 0,denyList:void 0,timeKeeper:void 0,obfuscator:void 0,harvester:void 0},d={};function l(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!d[e])throw new Error("Runtime for ".concat(e," was never set"));return d[e]}function f(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");d[e]={...(0,n.a)(t,u),...c},Object.hasOwnProperty.call(d[e],"harvestCount")||Object.defineProperty(d[e],"harvestCount",{get:()=>++s});const r=(0,i.nY)(e);r&&(r.runtime=d[e])}},9324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>o,Yq:()=>a,xv:()=>n});const n="1.278.3",i="PROD",o="CDN",a="^2.0.0-alpha.17"},6154:(e,t,r)=>{"use strict";r.d(t,{A4:()=>s,OF:()=>d,RI:()=>i,WN:()=>h,bv:()=>o,gm:()=>a,lR:()=>f,m:()=>u,mw:()=>c,sb:()=>l});var n=r(1863);const i="undefined"!=typeof window&&!!window.document,o="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),s="complete"===a?.document?.readyState,c=Boolean("hidden"===a?.document?.visibilityState),u=""+a?.location,d=/iPad|iPhone|iPod/.test(a.navigator?.userAgent),l=d&&"undefined"==typeof SharedWorker,f=(()=>{const e=a.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),h=Date.now()-(0,n.t)()},7295:(e,t,r)=>{"use strict";r.d(t,{Xv:()=>a,gX:()=>i,iW:()=>o});var n=[];function i(e){if(!e||o(e))return!1;if(0===n.length)return!0;for(var t=0;t<n.length;t++){var r=n[t];if("*"===r.hostname)return!1;if(s(r.hostname,e.hostname)&&c(r.pathname,e.pathname))return!1}return!0}function o(e){return void 0===e.hostname}function a(e){if(n=[],e&&e.length)for(var t=0;t<e.length;t++){let r=e[t];if(!r)continue;0===r.indexOf("http://")?r=r.substring(7):0===r.indexOf("https://")&&(r=r.substring(8));const i=r.indexOf("/");let o,a;i>0?(o=r.substring(0,i),a=r.substring(i)):(o=r,a="");let[s]=o.split(":");n.push({hostname:s,pathname:a})}}function s(e,t){return!(e.length>t.length)&&t.indexOf(e)===t.length-e.length}function c(e,t){return 0===e.indexOf("/")&&(e=e.substring(1)),0===t.indexOf("/")&&(t=t.substring(1)),""===e||e===t}},1687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>c,Ze:()=>l,x3:()=>u});var n=r(7836),i=r(3606),o=r(860),a=r(2646);const s={};function c(e,t){const r={staged:!1,priority:o.P3[t]||0};d(e),s[e].get(t)||s[e].set(t,r)}function u(e,t){e&&s[e]&&(s[e].get(t)&&s[e].delete(t),h(e,t,!1),s[e].size&&f(e))}function d(e){if(!e)throw new Error("agentIdentifier required");s[e]||(s[e]=new Map)}function l(e="",t="feature",r=!1){if(d(e),!e||!s[e].get(t)||r)return h(e,t);s[e].get(t).staged=!0,f(e)}function f(e){const t=Array.from(s[e]);t.every((([e,t])=>t.staged))&&(t.sort(((e,t)=>e[1].priority-t[1].priority)),t.forEach((([t])=>{s[e].delete(t),h(e,t)})))}function h(e,t,r=!0){const o=e?n.ee.get(e):n.ee,s=i.i.handlers;if(!o.aborted&&o.backlog&&s){if(r){const e=o.backlog[t],r=s[t];if(r){for(let t=0;e&&t<e.length;++t)p(e[t],r);Object.entries(r).forEach((([e,t])=>{Object.values(t||{}).forEach((t=>{t[0]?.on&&t[0]?.context()instanceof a.y&&t[0].on(e,t[1])}))}))}}o.isolatedBacklog||delete s[t],o.backlog[t]=null,o.emit("drain-"+t,[])}}function p(e,t){var r=e[1];Object.values(t[r]||{}).forEach((t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],o=e[2];n.apply(i,o)}}))}},7836:(e,t,r)=>{"use strict";r.d(t,{P:()=>c,ee:()=>u});var n=r(384),i=r(8990),o=r(3371),a=r(2646),s=r(5607);const c="nr@context:".concat(s.W),u=function e(t,r){var n={},s={},d={},l=!1;try{l=16===r.length&&(0,o.f)(r).isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=h(n),c=g(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var p=v()[s[e]];p&&p.push([f,e,r,a]);return a},get:m,listeners:g,context:h,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach((([e,n])=>{s[n]=t,t in r||(r[t]=[])}))},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach((e=>{delete f.backlog[e]}))},isBuffering:function(e){return!!v()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function h(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,c,(()=>new a.y(c))):new a.y(c)}function p(e,t){n[e]=g(e).concat(t)}function g(e){return n[e]||[]}function m(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),d=(0,n.Zm)();d.ee||(d.ee=u)},2646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},9908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},3606:(e,t,r)=>{"use strict";r.d(t,{i:()=>o});var n=r(9908);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.d,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.d);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function o(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>o,jT:()=>n,sp:()=>i})},5607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(9566).bz)()},9566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>s,ZF:()=>c,bz:()=>a,el:()=>u});var n=r(6154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,i++).toString(16));return a.join("")}function c(){return s(16)}function u(){return s(32)}},2614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>a,H3:()=>n,g:()=>u,iL:()=>c,tS:()=>s,uh:()=>i,wk:()=>o});const n="NRBA",i="SESSION",o=144e5,a=18e5,s={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},1863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},7485:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=r(6154);function i(e){if(0===(e||"").indexOf("data:"))return{protocol:"data"};try{const t=new URL(e,location.href),r={port:t.port,hostname:t.hostname,pathname:t.pathname,search:t.search,protocol:t.protocol.slice(0,t.protocol.indexOf(":")),sameOrigin:t.protocol===n.gm?.location?.protocol&&t.host===n.gm?.location?.host};return r.port&&""!==r.port||("http:"===t.protocol&&(r.port="80"),"https:"===t.protocol&&(r.port="443")),r.pathname&&""!==r.pathname?r.pathname.startsWith("/")||(r.pathname="/".concat(r.pathname)):r.pathname="/",r}catch(e){return{}}}},944:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.debug&&console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t)}r.d(t,{R:()=>n})},5284:(e,t,r)=>{"use strict";r.d(t,{t:()=>c,B:()=>s});var n=r(7836),i=r(6154);const o="newrelic";const a=new Set,s={};function c(e,t){const r=n.ee.get(t);s[t]??={},e&&"object"==typeof e&&(a.has(t)||(r.emit("rumresp",[e]),s[t]=e,a.add(t),function(e={}){try{i.gm.dispatchEvent(new CustomEvent(o,{detail:e}))}catch(e){}}({loaded:!0})))}},8990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},6389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout((()=>{i=clearTimeout(i)}),t)),n||(clearTimeout(i),i=setTimeout((()=>{e.apply(this,r)}),t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},3304:(e,t,r)=>{"use strict";r.d(t,{A:()=>o});var n=r(7836);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())??""}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}return""}}},5289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>o,sB:()=>a});var n=r(3878);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.sp)("load",e,t)}function a(e){if(i())return e();(0,n.DD)("DOMContentLoaded",e)}},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>o,US:()=>d,Zm:()=>a,bQ:()=>c,dV:()=>s,nY:()=>u,pV:()=>l});var n=r(6154),i=r(1863);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function s(){let e=a();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=a();return t.initializedAgents?.[e]}function d(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},2843:(e,t,r)=>{"use strict";r.d(t,{u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},8139:(e,t,r)=>{"use strict";r.d(t,{u:()=>f});var n=r(7836),i=r(3434),o=r(8990),a=r(6154);const s={},c=a.gm.XMLHttpRequest,u="addEventListener",d="removeEventListener",l="nr@wrapped:".concat(n.P);function f(e){var t=function(e){return(e||n.ee).get("events")}(e);if(s[t.debugId]++)return t;s[t.debugId]=1;var r=(0,i.YM)(t,!0);function f(e){r.inPlace(e,[u,d],"-",p)}function p(e,t){return e[1]}return"getPrototypeOf"in Object&&(a.RI&&h(document,f),c&&h(c.prototype,f),h(a.gm,f)),t.on(u+"-start",(function(e,t){var n=e[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var i=(0,o.I)(n,l,(function(){var e={object:function(){if("function"!=typeof n.handleEvent)return;return n.handleEvent.apply(n,arguments)},function:n}[typeof n];return e?r(e,"fn-",null,e.name||"anonymous"):n}));this.wrapped=e[1]=i}})),t.on(d+"-start",(function(e){e[1]=this.wrapped||e[1]})),t}function h(e,t,...r){let n=e;for(;"object"==typeof n&&!Object.prototype.hasOwnProperty.call(n,u);)n=Object.getPrototypeOf(n);n&&t(n,...r)}},3434:(e,t,r)=>{"use strict";r.d(t,{Jt:()=>o,YM:()=>c});var n=r(7836),i=r(5607);const o="nr@original:".concat(i.W);var a=Object.prototype.hasOwnProperty,s=!1;function c(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,i,o){n||(n="");const a="-"===n.charAt(0);for(let s=0;s<t.length;s++){const c=t[s],u=e[c];d(u)||(e[c]=r(u,a?c+n:n,i,c,o))}},r.flag=o,r;function r(t,r,n,s,c){return d(t)?t:(r||(r=""),nrWrapper[o]=t,function(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){u([e],r)}for(var n in e)a.call(e,n)&&(t[n]=e[n])}(t,nrWrapper,e),nrWrapper);function nrWrapper(){var o,a,d,l;try{a=this,o=[...arguments],d="function"==typeof n?n(o,a):n||{}}catch(t){u([t,"",[o,a,s],d],e)}i(r+"start",[o,a,s],d,c);try{return l=t.apply(a,o)}catch(e){throw i(r+"err",[o,a,e],d,c),e}finally{i(r+"end",[o,a,l],d,c)}}}function i(r,n,i,o){if(!s||t){var a=s;s=!0;try{e.emit(r,n,i,t,o)}catch(t){u([t,r,n,i],e)}s=a}}}function u(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function d(e){return!(e&&"function"==typeof e&&e.apply&&!e[o])}},9300:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.ajax},3333:(e,t,r)=>{"use strict";r.d(t,{$v:()=>u,TZ:()=>n,Zp:()=>i,kd:()=>c,mq:()=>s,nf:()=>a,qN:()=>o});const n=r(860).K7.genericEvents,i=["auxclick","click","copy","keydown","paste","scrollend"],o=["focus","blur"],a=4,s=1e3,c=["PageAction","UserAction","BrowserPerformance"],u={MARKS:"experimental.marks",MEASURES:"experimental.measures",RESOURCES:"experimental.resources"}},6774:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.jserrors},993:(e,t,r)=>{"use strict";r.d(t,{ET:()=>o,TZ:()=>a,p_:()=>i});var n=r(860);const i={ERROR:"ERROR",WARN:"WARN",INFO:"INFO",DEBUG:"DEBUG",TRACE:"TRACE"},o="log",a=n.K7.logging},3785:(e,t,r)=>{"use strict";r.d(t,{R:()=>c,b:()=>u});var n=r(9908),i=r(1863),o=r(860),a=r(3969),s=r(993);function c(e,t,r={},c=s.p_.INFO){(0,n.p)(a.xV,["API/logging/".concat(c.toLowerCase(),"/called")],void 0,o.K7.metrics,e),(0,n.p)(s.ET,[(0,i.t)(),t,r,c],void 0,o.K7.logging,e)}function u(e){return"string"==typeof e&&Object.values(s.p_).some((t=>t===e.toUpperCase().trim()))}},3969:(e,t,r)=>{"use strict";r.d(t,{TZ:()=>n,XG:()=>s,rs:()=>i,xV:()=>a,z_:()=>o});const n=r(860).K7.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},6630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},6344:(e,t,r)=>{"use strict";r.d(t,{BB:()=>d,G4:()=>o,Qb:()=>l,TZ:()=>i,Ug:()=>a,_s:()=>s,bc:()=>u,yP:()=>c});var n=r(2614);const i=r(860).K7.sessionReplay,o={RECORD:"recordReplay",PAUSE:"pauseReplay",REPLAY_RUNNING:"replayRunning",ERROR_DURING_REPLAY:"errorDuringReplay"},a=.12,s={DomContentLoaded:0,Load:1,FullSnapshot:2,IncrementalSnapshot:3,Meta:4,Custom:5},c={[n.g.ERROR]:15e3,[n.g.FULL]:3e5,[n.g.OFF]:0},u={RESET:{message:"Session was reset",sm:"Reset"},IMPORT:{message:"Recorder failed to import",sm:"Import"},TOO_MANY:{message:"429: Too Many Requests",sm:"Too-Many"},TOO_BIG:{message:"Payload was too large",sm:"Too-Big"},CROSS_TAB:{message:"Session Entity was set to OFF on another tab",sm:"Cross-Tab"},ENTITLEMENTS:{message:"Session Replay is not allowed and will not be started",sm:"Entitlement"}},d=5e3,l={API:"api"}},5270:(e,t,r)=>{"use strict";r.d(t,{Aw:()=>c,CT:()=>u,SR:()=>s});var n=r(384),i=r(9417),o=r(7767),a=r(6154);function s(e){return!!(0,n.dV)().o.MO&&(0,o.V)(e)&&!0===(0,i.gD)(e,"session_trace.enabled")}function c(e){return!0===(0,i.gD)(e,"session_replay.preload")&&s(e)}function u(e,t){const r=t.correctAbsoluteTimestamp(e);return{originalTimestamp:e,correctedTimestamp:r,timestampDiff:e-r,originTime:a.WN,correctedOriginTime:t.correctedOriginTime,originTimeDiff:Math.floor(a.WN-t.correctedOriginTime)}}},3738:(e,t,r)=>{"use strict";r.d(t,{He:()=>i,Kp:()=>s,Lc:()=>u,Rz:()=>d,TZ:()=>n,bD:()=>o,d3:()=>a,jx:()=>l,uP:()=>c});const n=r(860).K7.sessionTrace,i="bstResource",o="resource",a="-start",s="-end",c="fn"+a,u="fn"+s,d="pushState",l=1e3},3962:(e,t,r)=>{"use strict";r.d(t,{AM:()=>o,O2:()=>c,Qu:()=>u,TZ:()=>s,ih:()=>d,pP:()=>a,tC:()=>i});var n=r(860);const i=["click","keydown","submit","popstate"],o="api",a="initialPageLoad",s=n.K7.softNav,c={INITIAL_PAGE_LOAD:"",ROUTE_CHANGE:1,UNSPECIFIED:2},u={INTERACTION:1,AJAX:2,CUSTOM_END:3,CUSTOM_TRACER:4},d={IP:"in progress",FIN:"finished",CAN:"cancelled"}},7378:(e,t,r)=>{"use strict";r.d(t,{$p:()=>x,BR:()=>b,Kp:()=>R,L3:()=>y,Lc:()=>c,NC:()=>o,SG:()=>d,TZ:()=>i,U6:()=>p,UT:()=>m,d3:()=>w,dT:()=>f,e5:()=>T,gx:()=>v,l9:()=>l,oW:()=>h,op:()=>g,rw:()=>u,tH:()=>A,uP:()=>s,wW:()=>E,xq:()=>a});var n=r(384);const i=r(860).K7.spa,o=["click","submit","keypress","keydown","keyup","change"],a=999,s="fn-start",c="fn-end",u="cb-start",d="api-ixn-",l="remaining",f="interaction",h="spaNode",p="jsonpNode",g="fetch-start",m="fetch-done",v="fetch-body-",b="jsonp-end",y=(0,n.dV)().o.ST,w="-start",R="-end",x="-body",E="cb"+R,T="jsTime",A="fetch"},4234:(e,t,r)=>{"use strict";r.d(t,{W:()=>o});var n=r(7836),i=r(1687);class o{constructor(e,t){this.agentIdentifier=e,this.ee=n.ee.get(e),this.featureName=t,this.blocked=!1}deregisterDrain(){(0,i.x3)(this.agentIdentifier,this.featureName)}}},7767:(e,t,r)=>{"use strict";r.d(t,{V:()=>o});var n=r(9417),i=r(6154);const o=e=>i.RI&&!0===(0,n.gD)(e,"privacy.cookies_enabled")},425:(e,t,r)=>{"use strict";r.d(t,{j:()=>j});var n=r(860),i=r(2555),o=r(3371),a=r(9908),s=r(7836),c=r(1687),u=r(5289),d=r(6154),l=r(944),f=r(3969),h=r(384),p=r(6344);const g=["setErrorHandler","finished","addToTrace","addRelease","recordCustomEvent","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start",p.G4.RECORD,p.G4.PAUSE,"log","wrapLogger"],m=["setErrorHandler","finished","addToTrace","addRelease"];var v=r(1863),b=r(2614),y=r(993),w=r(3785),R=r(2646),x=r(3434);const E=new Map;function T(e,t,r,n){if("object"!=typeof t||!t||"string"!=typeof r||!r||"function"!=typeof t[r])return(0,l.R)(29);const i=function(e){return(e||s.ee).get("logger")}(e),o=(0,x.YM)(i),a=new R.y(s.P);a.level=n.level,a.customAttributes=n.customAttributes;const c=t[r]?.[x.Jt]||t[r];return E.set(c,a),o.inPlace(t,[r],"wrap-logger-",(()=>E.get(c))),i}function A(){const e=(0,h.pV)();g.forEach((t=>{e[t]=(...r)=>function(t,...r){let n=[];return Object.values(e.initializedAgents).forEach((e=>{e&&e.api?e.exposed&&e.api[t]&&n.push(e.api[t](...r)):(0,l.R)(38,t)})),n.length>1?n:n[0]}(t,...r)}))}const S={};var N=r(9417),_=r(5603),O=r(5284);const I=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let P=!1;function j(e,t={},g,R){let{init:x,info:E,loader_config:j,runtime:C={},exposed:k=!0}=t;C.loaderType=g;const L=(0,h.pV)();E||(x=L.init,E=L.info,j=L.loader_config),(0,N.xN)(e.agentIdentifier,x||{}),(0,_.a)(e.agentIdentifier,j||{}),E.jsAttributes??={},d.bv&&(E.jsAttributes.isWorker=!0),(0,i.x1)(e.agentIdentifier,E);const H=(0,N.D0)(e.agentIdentifier),M=[E.beacon,E.errorBeacon];P||(H.proxy.assets&&(I(H.proxy.assets),M.push(H.proxy.assets)),H.proxy.beacon&&M.push(H.proxy.beacon),A(),(0,h.US)("activatedFeatures",O.B),e.runSoftNavOverSpa&&=!0===H.soft_navigations.enabled&&H.feature_flags.includes("soft_nav")),C.denyList=[...H.ajax.deny_list||[],...H.ajax.block_internal?M:[]],C.ptid=e.agentIdentifier,(0,o.V)(e.agentIdentifier,C),e.ee=s.ee.get(e.agentIdentifier),void 0===e.api&&(e.api=function(e,t,h=!1){t||(0,c.Ak)(e,"api");const g={};var R=s.ee.get(e),x=R.get("tracer");S[e]=b.g.OFF,R.on(p.G4.REPLAY_RUNNING,(t=>{S[e]=t}));var E="api-",A=E+"ixn-";function N(t,r,n,o){const a=(0,i.Vp)(e);return null===r?delete a.jsAttributes[t]:(0,i.x1)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),I(E,n,!0,o||null===r?"session":void 0)(t,r)}function _(){}g.log=function(e,{customAttributes:t={},level:r=y.p_.INFO}={}){(0,a.p)(f.xV,["API/log/called"],void 0,n.K7.metrics,R),(0,w.R)(R,e,t,r)},g.wrapLogger=(e,t,{customAttributes:r={},level:i=y.p_.INFO}={})=>{(0,a.p)(f.xV,["API/wrapLogger/called"],void 0,n.K7.metrics,R),T(R,e,t,{customAttributes:r,level:i})},m.forEach((e=>{g[e]=I(E,e,!0,"api")})),g.addPageAction=I(E,"addPageAction",!0,n.K7.genericEvents),g.recordCustomEvent=I(E,"recordCustomEvent",!0,n.K7.genericEvents),g.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,o.f)(e).customTransaction=(r||"http://custom.transaction")+t,I(E,"setPageViewName",!0)()},g.setCustomAttribute=function(e,t,r=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return N(e,t,"setCustomAttribute",r);(0,l.R)(40,typeof t)}else(0,l.R)(39,typeof e)},g.setUserId=function(e){if("string"==typeof e||null===e)return N("enduser.id",e,"setUserId",!0);(0,l.R)(41,typeof e)},g.setApplicationVersion=function(e){if("string"==typeof e||null===e)return N("application.version",e,"setApplicationVersion",!1);(0,l.R)(42,typeof e)},g.start=()=>{try{(0,a.p)(f.xV,["API/start/called"],void 0,n.K7.metrics,R),R.emit("manual-start-all")}catch(e){(0,l.R)(23,e)}},g[p.G4.RECORD]=function(){(0,a.p)(f.xV,["API/recordReplay/called"],void 0,n.K7.metrics,R),(0,a.p)(p.G4.RECORD,[],void 0,n.K7.sessionReplay,R)},g[p.G4.PAUSE]=function(){(0,a.p)(f.xV,["API/pauseReplay/called"],void 0,n.K7.metrics,R),(0,a.p)(p.G4.PAUSE,[],void 0,n.K7.sessionReplay,R)},g.interaction=function(e){return(new _).get("object"==typeof e?e:{})};const O=_.prototype={createTracer:function(e,t){var r={},i=this,o="function"==typeof t;return(0,a.p)(f.xV,["API/createTracer/called"],void 0,n.K7.metrics,R),h||(0,a.p)(A+"tracer",[(0,v.t)(),e,r],i,n.K7.spa,R),function(){if(x.emit((o?"":"no-")+"fn-start",[(0,v.t)(),i,o],r),o)try{return t.apply(this,arguments)}catch(e){const t="string"==typeof e?new Error(e):e;throw x.emit("fn-err",[arguments,this,t],r),t}finally{x.emit("fn-end",[(0,v.t)()],r)}}}};function I(e,t,r,i){return function(){return(0,a.p)(f.xV,["API/"+t+"/called"],void 0,n.K7.metrics,R),i&&(0,a.p)(e+t,[r?(0,v.t)():performance.now(),...arguments],r?null:this,i,R),r?void 0:this}}function P(){r.e(478).then(r.bind(r,8778)).then((({setAPI:t})=>{t(e),(0,c.Ze)(e,"api")})).catch((e=>{(0,l.R)(27,e),R.abort()}))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{O[e]=I(A,e,void 0,h?n.K7.softNav:n.K7.spa)})),g.setCurrentRouteName=h?I(A,"routeName",void 0,n.K7.softNav):I(E,"routeName",!0,n.K7.spa),g.noticeError=function(t,r){"string"==typeof t&&(t=new Error(t)),(0,a.p)(f.xV,["API/noticeError/called"],void 0,n.K7.metrics,R),(0,a.p)("err",[t,(0,v.t)(),!1,r,!!S[e]],void 0,n.K7.jserrors,R)},d.RI?(0,u.GG)((()=>P()),!0):P(),g}(e.agentIdentifier,R,e.runSoftNavOverSpa)),void 0===e.exposed&&(e.exposed=k),P=!0}},8374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>u,K7:()=>s,P3:()=>c,XX:()=>i,qY:()=>n,v4:()=>a});const n="events",i="jserrors",o="browser/blobs",a="rum",s={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},c={[s.pageViewEvent]:1,[s.pageViewTiming]:2,[s.metrics]:3,[s.jserrors]:4,[s.spa]:5,[s.ajax]:6,[s.sessionTrace]:7,[s.softNav]:8,[s.sessionReplay]:9,[s.logging]:10,[s.genericEvents]:11},u={[s.pageViewEvent]:a,[s.pageViewTiming]:n,[s.ajax]:n,[s.spa]:n,[s.softNav]:n,[s.metrics]:i,[s.jserrors]:i,[s.sessionTrace]:o,[s.sessionReplay]:o,[s.logging]:"browser/logs",[s.genericEvents]:"ins"}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>({212:"nr-spa-compressor",249:"nr-spa-recorder",478:"nr-spa"}[e]+"-1.278.3.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.278.3.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}if(!s){c=!0;var f={478:"sha512-9o8hfH3IjaYqO1cFWFDPB9bENDZ2pglMWvq7gx0ORi7ofxlxpYgb8MTuwgB7tq5QwFZYQ0n2K1JvLwMXJyXuIA==",249:"sha512-+j/xdEsT2xwURPzSZRLGdIKAmvAxiuVZ6N5aJ5mS0g3gvNnbdUKGvW8sMx0P2iLQFnDqGiWGXcfW00aiku4G8Q==",212:"sha512-uAfw/wEXP9O52gVzjNwyxghxZj+y3RGqfbLhc1PTvbxguikFVxDi+34yUnMbVmZGitjB5L85Y0o77TcKR9b4SA=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var h=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(h.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=h.bind(null,s.onerror),s.onload=h.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={38:0,788:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.278.3.PROD"]=self["webpackChunk:NRBA-1.278.3.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8374);var e=i(944),t=i(6344),r=i(9566);class n{agentIdentifier;constructor(e=(0,r.LA)(16)){this.agentIdentifier=e}#e(t,...r){if("function"==typeof this.api?.[t])return this.api[t](...r);(0,e.R)(35,t)}addPageAction(e,t){return this.#e("addPageAction",e,t)}recordCustomEvent(e,t){return this.#e("recordCustomEvent",e,t)}setPageViewName(e,t){return this.#e("setPageViewName",e,t)}setCustomAttribute(e,t,r){return this.#e("setCustomAttribute",e,t,r)}noticeError(e,t){return this.#e("noticeError",e,t)}setUserId(e){return this.#e("setUserId",e)}setApplicationVersion(e){return this.#e("setApplicationVersion",e)}setErrorHandler(e){return this.#e("setErrorHandler",e)}addRelease(e,t){return this.#e("addRelease",e,t)}log(e,t){return this.#e("log",e,t)}}class o extends n{#e(t,...r){if("function"==typeof this.api?.[t])return this.api[t](...r);(0,e.R)(35,t)}start(){return this.#e("start")}finished(e){return this.#e("finished",e)}recordReplay(){return this.#e(t.G4.RECORD)}pauseReplay(){return this.#e(t.G4.PAUSE)}addToTrace(e){return this.#e("addToTrace",e)}setCurrentRouteName(e){return this.#e("setCurrentRouteName",e)}interaction(){return this.#e("interaction")}wrapLogger(e,t,r){return this.#e("wrapLogger",e,t,r)}}var a=i(860),s=i(9417);const c=Object.values(a.K7);function u(e){const t={};return c.forEach((r=>{t[r]=function(e,t){return!0===(0,s.gD)(t,"".concat(e,".enabled"))}(r,e)})),t}var d=i(425);var l=i(1687),f=i(4234),h=i(5289),p=i(6154),g=i(5270),m=i(7767),v=i(6389);class b extends f.W{constructor(e,t,r=!0){super(e.agentIdentifier,t),this.auto=r,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===e.init[this.featureName].autoStart&&(this.auto=!1),this.auto?(0,l.Ak)(e.agentIdentifier,t):this.ee.on("manual-start-all",(0,v.J)((()=>{(0,l.Ak)(e.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator(e)})))}importAggregator(t,r={}){if(this.featAggregate||!this.auto)return;let n;this.onAggregateImported=new Promise((e=>{n=e}));const o=async()=>{let o;try{if((0,m.V)(this.agentIdentifier)){const{setupAgentSession:e}=await i.e(478).then(i.bind(i,6526));o=e(t)}}catch(t){(0,e.R)(20,t),this.ee.emit("internal-error",[t]),this.featureName===a.K7.sessionReplay&&this.abortHandler?.()}try{if(!this.#t(this.featureName,o))return(0,l.Ze)(this.agentIdentifier,this.featureName),void n(!1);const{lazyFeatureLoader:e}=await i.e(478).then(i.bind(i,6103)),{Aggregate:a}=await e(this.featureName,"aggregate");this.featAggregate=new a(t,r),t.runtime.harvester.initializedAggregates.push(this.featAggregate),n(!0)}catch(t){(0,e.R)(34,t),this.abortHandler?.(),(0,l.Ze)(this.agentIdentifier,this.featureName,!0),n(!1),this.ee&&this.ee.abort()}};p.RI?(0,h.GG)((()=>o()),!0):o()}#t(e,t){switch(e){case a.K7.sessionReplay:return(0,g.SR)(this.agentIdentifier)&&!!t;case a.K7.sessionTrace:return!!t;default:return!0}}}var y=i(6630);class w extends b{static featureName=y.T;constructor(e,t=!0){super(e,y.T,t),this.importAggregator(e)}}var R=i(384);var x=i(9908),E=i(2843),T=i(3878),A=i(782),S=i(1863);class N extends b{static featureName=A.T;constructor(e,t=!0){super(e,A.T,t),p.RI&&((0,E.u)((()=>(0,x.p)("docHidden",[(0,S.t)()],void 0,A.T,this.ee)),!0),(0,T.sp)("pagehide",(()=>(0,x.p)("winPagehide",[(0,S.t)()],void 0,A.T,this.ee))),this.importAggregator(e))}}var _=i(3969);class O extends b{static featureName=_.TZ;constructor(e,t=!0){super(e,_.TZ,t),this.importAggregator(e)}}var I=i(6774),P=i(3304);class j{constructor(e,t,r,n,i){this.name="UncaughtError",this.message="string"==typeof e?e:(0,P.A)(e),this.sourceURL=t,this.line=r,this.column=n,this.__newrelic=i}}function C(e){return H(e)?e:new j(void 0!==e?.message?e.message:e,e?.filename||e?.sourceURL,e?.lineno||e?.line,e?.colno||e?.col,e?.__newrelic)}function k(e){const t="Unhandled Promise Rejection";if(!e?.reason)return;if(H(e.reason))try{return e.reason.message=t+": "+e.reason.message,C(e.reason)}catch(t){return C(e.reason)}const r=C(e.reason);return r.message=t+": "+r?.message,r}function L(e){if(e.error instanceof SyntaxError&&!/:\d+$/.test(e.error.stack?.trim())){const t=new j(e.message,e.filename,e.lineno,e.colno,e.error.__newrelic);return t.name=SyntaxError.name,t}return H(e.error)?e.error:C(e)}function H(e){return e instanceof Error&&!!e.stack}class M extends b{static featureName=I.T;#r=!1;constructor(e,r=!0){super(e,I.T,r);try{this.removeOnAbort=new AbortController}catch(e){}this.ee.on("internal-error",((e,t)=>{this.abortHandler&&(0,x.p)("ierr",[C(e),(0,S.t)(),!0,{},this.#r,t],void 0,this.featureName,this.ee)})),this.ee.on(t.G4.REPLAY_RUNNING,(e=>{this.#r=e})),p.gm.addEventListener("unhandledrejection",(e=>{this.abortHandler&&(0,x.p)("err",[k(e),(0,S.t)(),!1,{unhandledPromiseRejection:1},this.#r],void 0,this.featureName,this.ee)}),(0,T.jT)(!1,this.removeOnAbort?.signal)),p.gm.addEventListener("error",(e=>{this.abortHandler&&(0,x.p)("err",[L(e),(0,S.t)(),!1,{},this.#r],void 0,this.featureName,this.ee)}),(0,T.jT)(!1,this.removeOnAbort?.signal)),this.abortHandler=this.#n,this.importAggregator(e)}#n(){this.removeOnAbort?.abort(),this.abortHandler=void 0}}var D=i(8990);let K=1;const U="nr@id";function V(e){const t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===p.gm?0:(0,D.I)(e,U,(function(){return K++}))}function G(e){if("string"==typeof e&&e.length)return e.length;if("object"==typeof e){if("undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer&&e.byteLength)return e.byteLength;if("undefined"!=typeof Blob&&e instanceof Blob&&e.size)return e.size;if(!("undefined"!=typeof FormData&&e instanceof FormData))try{return(0,P.A)(e).length}catch(e){return}}}var F=i(8139),B=i(7836),W=i(3434);const z={},q=["open","send"];function Z(t){var r=t||B.ee;const n=function(e){return(e||B.ee).get("xhr")}(r);if(void 0===p.gm.XMLHttpRequest)return n;if(z[n.debugId]++)return n;z[n.debugId]=1,(0,F.u)(r);var i=(0,W.YM)(n),o=p.gm.XMLHttpRequest,a=p.gm.MutationObserver,s=p.gm.Promise,c=p.gm.setInterval,u="readystatechange",d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],l=[],f=p.gm.XMLHttpRequest=function(t){const r=new o(t),a=n.context(r);try{n.emit("new-xhr",[r],a),r.addEventListener(u,(s=a,function(){var e=this;e.readyState>3&&!s.resolved&&(s.resolved=!0,n.emit("xhr-resolved",[],e)),i.inPlace(e,d,"fn-",y)}),(0,T.jT)(!1))}catch(t){(0,e.R)(15,t);try{n.emit("internal-error",[t])}catch(e){}}var s;return r};function h(e,t){i.inPlace(t,["onreadystatechange"],"fn-",y)}if(function(e,t){for(var r in e)t[r]=e[r]}(o,f),f.prototype=o.prototype,i.inPlace(f.prototype,q,"-xhr-",y),n.on("send-xhr-start",(function(e,t){h(e,t),function(e){l.push(e),a&&(g?g.then(b):c?c(b):(m=-m,v.data=m))}(t)})),n.on("open-xhr-start",h),a){var g=s&&s.resolve();if(!c&&!s){var m=1,v=document.createTextNode(m);new a(b).observe(v,{characterData:!0})}}else r.on("fn-end",(function(e){e[0]&&e[0].type===u||b()}));function b(){for(var e=0;e<l.length;e++)h(0,l[e]);l.length&&(l=[])}function y(e,t){return t}return n}var Y="fetch-",X=Y+"body-",J=["arrayBuffer","blob","json","text","formData"],Q=p.gm.Request,ee=p.gm.Response,te="prototype";const re={};function ne(e){const t=function(e){return(e||B.ee).get("fetch")}(e);if(!(Q&&ee&&p.gm.fetch))return t;if(re[t.debugId]++)return t;function r(e,r,n){var i=e[r];"function"==typeof i&&(e[r]=function(){var e,r=[...arguments],o={};t.emit(n+"before-start",[r],o),o[B.P]&&o[B.P].dt&&(e=o[B.P].dt);var a=i.apply(this,r);return t.emit(n+"start",[r,e],a),a.then((function(e){return t.emit(n+"end",[null,e],a),e}),(function(e){throw t.emit(n+"end",[e],a),e}))})}return re[t.debugId]=1,J.forEach((e=>{r(Q[te],e,X),r(ee[te],e,X)})),r(p.gm,"fetch",Y),t.on(Y+"end",(function(e,r){var n=this;if(r){var i=r.headers.get("content-length");null!==i&&(n.rxSize=i),t.emit(Y+"done",[null,r],n)}else t.emit(Y+"done",[e],n)})),t}var ie=i(7485),oe=i(5603);class ae{constructor(e){this.agentIdentifier=e}generateTracePayload(e){if(!this.shouldGenerateTrace(e))return null;var t=(0,oe.o)(this.agentIdentifier);if(!t)return null;var n=(t.accountID||"").toString()||null,i=(t.agentID||"").toString()||null,o=(t.trustKey||"").toString()||null;if(!n||!i)return null;var a=(0,r.ZF)(),s=(0,r.el)(),c=Date.now(),u={spanId:a,traceId:s,timestamp:c};return(e.sameOrigin||this.isAllowedOrigin(e)&&this.useTraceContextHeadersForCors())&&(u.traceContextParentHeader=this.generateTraceContextParentHeader(a,s),u.traceContextStateHeader=this.generateTraceContextStateHeader(a,c,n,i,o)),(e.sameOrigin&&!this.excludeNewrelicHeader()||!e.sameOrigin&&this.isAllowedOrigin(e)&&this.useNewrelicHeaderForCors())&&(u.newrelicHeader=this.generateTraceHeader(a,s,c,n,i,o)),u}generateTraceContextParentHeader(e,t){return"00-"+t+"-"+e+"-01"}generateTraceContextStateHeader(e,t,r,n,i){return i+"@nr=0-1-"+r+"-"+n+"-"+e+"----"+t}generateTraceHeader(e,t,r,n,i,o){if(!("function"==typeof p.gm?.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:i,id:e,tr:t,ti:r}};return o&&n!==o&&(a.d.tk=o),btoa((0,P.A)(a))}shouldGenerateTrace(e){return this.isDtEnabled()&&this.isAllowedOrigin(e)}isAllowedOrigin(e){var t=!1,r={};if((0,s.gD)(this.agentIdentifier,"distributed_tracing")&&(r=(0,s.D0)(this.agentIdentifier).distributed_tracing),e.sameOrigin)t=!0;else if(r.allowed_origins instanceof Array)for(var n=0;n<r.allowed_origins.length;n++){var i=(0,ie.D)(r.allowed_origins[n]);if(e.hostname===i.hostname&&e.protocol===i.protocol&&e.port===i.port){t=!0;break}}return t}isDtEnabled(){var e=(0,s.gD)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.enabled}excludeNewrelicHeader(){var e=(0,s.gD)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.exclude_newrelic_header}useNewrelicHeaderForCors(){var e=(0,s.gD)(this.agentIdentifier,"distributed_tracing");return!!e&&!1!==e.cors_use_newrelic_header}useTraceContextHeadersForCors(){var e=(0,s.gD)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.cors_use_tracecontext_headers}}var se=i(9300),ce=i(7295),ue=["load","error","abort","timeout"],de=ue.length,le=(0,R.dV)().o.REQ,fe=(0,R.dV)().o.XHR;class he extends b{static featureName=se.T;constructor(e,t=!0){super(e,se.T,t),this.dt=new ae(e.agentIdentifier),this.handler=(e,t,r,n)=>(0,x.p)(e,t,r,n,this.ee);try{const e={xmlhttprequest:"xhr",fetch:"fetch",beacon:"beacon"};p.gm?.performance?.getEntriesByType("resource").forEach((t=>{if(t.initiatorType in e&&0!==t.responseStatus){const r={status:t.responseStatus},n={rxSize:t.transferSize,duration:Math.floor(t.duration),cbTime:0};pe(r,t.name),this.handler("xhr",[r,n,t.startTime,t.responseEnd,e[t.initiatorType]],void 0,a.K7.ajax)}}))}catch(e){}ne(this.ee),Z(this.ee),function(e,t,r,n){function i(e){var t=this;t.totalCbs=0,t.called=0,t.cbTime=0,t.end=R,t.ended=!1,t.xhrGuids={},t.lastSize=null,t.loadCaptureCalled=!1,t.params=this.params||{},t.metrics=this.metrics||{},e.addEventListener("load",(function(r){E(t,e)}),(0,T.jT)(!1)),p.lR||e.addEventListener("progress",(function(e){t.lastSize=e.loaded}),(0,T.jT)(!1))}function o(e){this.params={method:e[0]},pe(this,e[1]),this.metrics={}}function s(t,r){e.loader_config.xpid&&this.sameOrigin&&r.setRequestHeader("X-NewRelic-ID",e.loader_config.xpid);var i=n.generateTracePayload(this.parsedOrigin);if(i){var o=!1;i.newrelicHeader&&(r.setRequestHeader("newrelic",i.newrelicHeader),o=!0),i.traceContextParentHeader&&(r.setRequestHeader("traceparent",i.traceContextParentHeader),i.traceContextStateHeader&&r.setRequestHeader("tracestate",i.traceContextStateHeader),o=!0),o&&(this.dt=i)}}function c(e,r){var n=this.metrics,i=e[0],o=this;if(n&&i){var a=G(i);a&&(n.txSize=a)}this.startTime=(0,S.t)(),this.body=i,this.listener=function(e){try{"abort"!==e.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==e.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof r.onload)&&"function"==typeof o.end)&&o.end(r)}catch(e){try{t.emit("internal-error",[e])}catch(e){}}};for(var s=0;s<de;s++)r.addEventListener(ue[s],this.listener,(0,T.jT)(!1))}function u(e,t,r){this.cbTime+=e,t?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof r.onload||"function"!=typeof this.end||this.end(r)}function d(e,t){var r=""+V(e)+!!t;this.xhrGuids&&!this.xhrGuids[r]&&(this.xhrGuids[r]=!0,this.totalCbs+=1)}function l(e,t){var r=""+V(e)+!!t;this.xhrGuids&&this.xhrGuids[r]&&(delete this.xhrGuids[r],this.totalCbs-=1)}function f(){this.endTime=(0,S.t)()}function h(e,r){r instanceof fe&&"load"===e[0]&&t.emit("xhr-load-added",[e[1],e[2]],r)}function g(e,r){r instanceof fe&&"load"===e[0]&&t.emit("xhr-load-removed",[e[1],e[2]],r)}function m(e,t,r){t instanceof fe&&("onload"===r&&(this.onload=!0),("load"===(e[0]&&e[0].type)||this.onload)&&(this.xhrCbStart=(0,S.t)()))}function v(e,r){this.xhrCbStart&&t.emit("xhr-cb-time",[(0,S.t)()-this.xhrCbStart,this.onload,r],r)}function b(e){var t,r=e[1]||{};if("string"==typeof e[0]?0===(t=e[0]).length&&p.RI&&(t=""+p.gm.location.href):e[0]&&e[0].url?t=e[0].url:p.gm?.URL&&e[0]&&e[0]instanceof URL?t=e[0].href:"function"==typeof e[0].toString&&(t=e[0].toString()),"string"==typeof t&&0!==t.length){t&&(this.parsedOrigin=(0,ie.D)(t),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=n.generateTracePayload(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if(e[0]&&e[0].headers)s(e[0].headers,i)&&(this.dt=i);else{var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),s(o.headers,i)&&(this.dt=i),e.length>1?e[1]=o:e.push(o)}}function s(e,t){var r=!1;return t.newrelicHeader&&(e.set("newrelic",t.newrelicHeader),r=!0),t.traceContextParentHeader&&(e.set("traceparent",t.traceContextParentHeader),t.traceContextStateHeader&&e.set("tracestate",t.traceContextStateHeader),r=!0),r}}function y(e,t){this.params={},this.metrics={},this.startTime=(0,S.t)(),this.dt=t,e.length>=1&&(this.target=e[0]),e.length>=2&&(this.opts=e[1]);var r,n=this.opts||{},i=this.target;"string"==typeof i?r=i:"object"==typeof i&&i instanceof le?r=i.url:p.gm?.URL&&"object"==typeof i&&i instanceof URL&&(r=i.href),pe(this,r);var o=(""+(i&&i instanceof le&&i.method||n.method||"GET")).toUpperCase();this.params.method=o,this.body=n.body,this.txSize=G(n.body)||0}function w(e,t){if(this.endTime=(0,S.t)(),this.params||(this.params={}),(0,ce.iW)(this.params))return;let n;this.params.status=t?t.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);const i={txSize:this.txSize,rxSize:n,duration:(0,S.t)()-this.startTime};r("xhr",[this.params,i,this.startTime,this.endTime,"fetch"],this,a.K7.ajax)}function R(e){const t=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(let t=0;t<de;t++)e.removeEventListener(ue[t],this.listener,!1);t.aborted||(0,ce.iW)(t)||(n.duration=(0,S.t)()-this.startTime,this.loadCaptureCalled||4!==e.readyState?null==t.status&&(t.status=0):E(this,e),n.cbTime=this.cbTime,r("xhr",[t,n,this.startTime,this.endTime,"xhr"],this,a.K7.ajax))}}function E(e,r){e.params.status=r.status;var n=function(e,t){var r=e.responseType;return"json"===r&&null!==t?t:"arraybuffer"===r||"blob"===r||"json"===r?G(e.response):"text"===r||""===r||void 0===r?G(e.responseText):void 0}(r,e.lastSize);if(n&&(e.metrics.rxSize=n),e.sameOrigin){var i=r.getResponseHeader("X-NewRelic-App-Data");i&&((0,x.p)(_.rs,["Ajax/CrossApplicationTracing/Header/Seen"],void 0,a.K7.metrics,t),e.params.cat=i.split(", ").pop())}e.loadCaptureCalled=!0}t.on("new-xhr",i),t.on("open-xhr-start",o),t.on("open-xhr-end",s),t.on("send-xhr-start",c),t.on("xhr-cb-time",u),t.on("xhr-load-added",d),t.on("xhr-load-removed",l),t.on("xhr-resolved",f),t.on("addEventListener-end",h),t.on("removeEventListener-end",g),t.on("fn-end",v),t.on("fetch-before-start",b),t.on("fetch-start",y),t.on("fn-start",m),t.on("fetch-done",w)}(e,this.ee,this.handler,this.dt),this.importAggregator(e)}}function pe(e,t){var r=(0,ie.D)(t),n=e.params||e;n.hostname=r.hostname,n.port=r.port,n.protocol=r.protocol,n.host=r.hostname+":"+r.port,n.pathname=r.pathname,e.parsedOrigin=r,e.sameOrigin=r.sameOrigin}const ge={},me=["pushState","replaceState"];function ve(e){const t=function(e){return(e||B.ee).get("history")}(e);return!p.RI||ge[t.debugId]++||(ge[t.debugId]=1,(0,W.YM)(t).inPlace(window.history,me,"-")),t}var be=i(3738);const{He:ye,bD:we,d3:Re,Kp:xe,TZ:Ee,Lc:Te,uP:Ae,Rz:Se}=be;class Ne extends b{static featureName=Ee;constructor(e,t=!0){super(e,Ee,t);if(!(0,m.V)(this.agentIdentifier))return void this.deregisterDrain();const r=this.ee;let n;ve(r),this.eventsEE=(0,F.u)(r),this.eventsEE.on(Ae,(function(e,t){this.bstStart=(0,S.t)()})),this.eventsEE.on(Te,(function(e,t){(0,x.p)("bst",[e[0],t,this.bstStart,(0,S.t)()],void 0,a.K7.sessionTrace,r)})),r.on(Se+Re,(function(e){this.time=(0,S.t)(),this.startPath=location.pathname+location.hash})),r.on(Se+xe,(function(e){(0,x.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,a.K7.sessionTrace,r)}));try{n=new PerformanceObserver((e=>{const t=e.getEntries();(0,x.p)(ye,[t],void 0,a.K7.sessionTrace,r)})),n.observe({type:we,buffered:!0})}catch(e){}this.importAggregator(e,{resourceObserver:n})}}var _e=i(2614);class Oe extends b{static featureName=t.TZ;#i;#o;constructor(e,r=!0){let n;super(e,t.TZ,r),this.replayRunning=!1,this.#o=e;try{n=JSON.parse(localStorage.getItem("".concat(_e.H3,"_").concat(_e.uh)))}catch(e){}(0,g.SR)(e.agentIdentifier)&&this.ee.on(t.G4.RECORD,(()=>this.#a())),this.#s(n)?(this.#i=n?.sessionReplayMode,this.#c()):this.importAggregator(e),this.ee.on("err",(e=>{this.replayRunning&&(this.errorNoticed=!0,(0,x.p)(t.G4.ERROR_DURING_REPLAY,[e],void 0,this.featureName,this.ee))})),this.ee.on(t.G4.REPLAY_RUNNING,(e=>{this.replayRunning=e}))}#s(e){return e&&(e.sessionReplayMode===_e.g.FULL||e.sessionReplayMode===_e.g.ERROR)||(0,g.Aw)(this.agentIdentifier)}#u=!1;async#c(e){if(!this.#u){this.#u=!0;try{const{Recorder:t}=await Promise.all([i.e(478),i.e(249)]).then(i.bind(i,8589));this.recorder??=new t({mode:this.#i,agentIdentifier:this.agentIdentifier,trigger:e,ee:this.ee,agentRef:this.#o}),this.recorder.startRecording(),this.abortHandler=this.recorder.stopRecording}catch(e){}this.importAggregator(this.#o,{recorder:this.recorder,errorNoticed:this.errorNoticed})}}#a(){this.featAggregate?this.featAggregate.mode!==_e.g.FULL&&this.featAggregate.initializeRecording(_e.g.FULL,!0):(this.#i=_e.g.FULL,this.#c(t.Qb.API),this.recorder&&this.recorder.parent.mode!==_e.g.FULL&&(this.recorder.parent.mode=_e.g.FULL,this.recorder.stopRecording(),this.recorder.startRecording(),this.abortHandler=this.recorder.stopRecording))}}var Ie=i(3962);class Pe extends b{static featureName=Ie.TZ;constructor(e,t=!0){if(super(e,Ie.TZ,t),!p.RI||!(0,R.dV)().o.MO)return;const r=ve(this.ee);Ie.tC.forEach((e=>{(0,T.sp)(e,(e=>{a(e)}),!0)}));const n=()=>(0,x.p)("newURL",[(0,S.t)(),""+window.location],void 0,this.featureName,this.ee);r.on("pushState-end",n),r.on("replaceState-end",n);try{this.removeOnAbort=new AbortController}catch(e){}(0,T.sp)("popstate",(e=>(0,x.p)("newURL",[e.timeStamp,""+window.location],void 0,this.featureName,this.ee)),!0,this.removeOnAbort?.signal);let i=!1;const o=new((0,R.dV)().o.MO)(((e,t)=>{i||(i=!0,requestAnimationFrame((()=>{(0,x.p)("newDom",[(0,S.t)()],void 0,this.featureName,this.ee),i=!1})))})),a=(0,v.s)((e=>{(0,x.p)("newUIEvent",[e],void 0,this.featureName,this.ee),o.observe(document.body,{attributes:!0,childList:!0,subtree:!0,characterData:!0})}),100,{leading:!0});this.abortHandler=function(){this.removeOnAbort?.abort(),o.disconnect(),this.abortHandler=void 0},this.importAggregator(e,{domObserver:o})}}var je=i(7378);const Ce={},ke=["appendChild","insertBefore","replaceChild"];function Le(e){const t=function(e){return(e||B.ee).get("jsonp")}(e);if(!p.RI||Ce[t.debugId])return t;Ce[t.debugId]=!0;var r=(0,W.YM)(t),n=/[?&](?:callback|cb)=([^&#]+)/,i=/(.*)\.([^.]+)/,o=/^(\w+)(\.|$)(.*)$/;function a(e,t){if(!e)return t;const r=e.match(o),n=r[1];return a(r[3],t[n])}return r.inPlace(Node.prototype,ke,"dom-"),t.on("dom-start",(function(e){!function(e){if(!e||"string"!=typeof e.nodeName||"script"!==e.nodeName.toLowerCase())return;if("function"!=typeof e.addEventListener)return;var o=(s=e.src,c=s.match(n),c?c[1]:null);var s,c;if(!o)return;var u=function(e){var t=e.match(i);if(t&&t.length>=3)return{key:t[2],parent:a(t[1],window)};return{key:e,parent:window}}(o);if("function"!=typeof u.parent[u.key])return;var d={};function l(){t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,T.jT)(!1)),e.removeEventListener("error",f,(0,T.jT)(!1))}function f(){t.emit("jsonp-error",[],d),t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,T.jT)(!1)),e.removeEventListener("error",f,(0,T.jT)(!1))}r.inPlace(u.parent,[u.key],"cb-",d),e.addEventListener("load",l,(0,T.jT)(!1)),e.addEventListener("error",f,(0,T.jT)(!1)),t.emit("new-jsonp",[e.src],d)}(e[0])})),t}const He={};function Me(e){const t=function(e){return(e||B.ee).get("promise")}(e);if(He[t.debugId])return t;He[t.debugId]=!0;var r=t.context,n=(0,W.YM)(t),i=p.gm.Promise;return i&&function(){function e(r){var o=t.context(),a=n(r,"executor-",o,null,!1);const s=Reflect.construct(i,[a],e);return t.context(s).getCtx=function(){return o},s}p.gm.Promise=e,Object.defineProperty(e,"name",{value:"Promise"}),e.toString=function(){return i.toString()},Object.setPrototypeOf(e,i),["all","race"].forEach((function(r){const n=i[r];e[r]=function(e){let i=!1;[...e||[]].forEach((e=>{this.resolve(e).then(a("all"===r),a(!1))}));const o=n.apply(this,arguments);return o;function a(e){return function(){t.emit("propagate",[null,!i],o,!1,!1),i=i||!e}}}})),["resolve","reject"].forEach((function(r){const n=i[r];e[r]=function(e){const r=n.apply(this,arguments);return e!==r&&t.emit("propagate",[e,!0],r,!1,!1),r}})),e.prototype=i.prototype;const o=i.prototype.then;i.prototype.then=function(...e){var i=this,a=r(i);a.promise=i,e[0]=n(e[0],"cb-",a,null,!1),e[1]=n(e[1],"cb-",a,null,!1);const s=o.apply(this,e);return a.nextPromise=s,t.emit("propagate",[i,!0],s,!1,!1),s},i.prototype.then[W.Jt]=o,t.on("executor-start",(function(e){e[0]=n(e[0],"resolve-",this,null,!1),e[1]=n(e[1],"resolve-",this,null,!1)})),t.on("executor-err",(function(e,t,r){e[1](r)})),t.on("cb-end",(function(e,r,n){t.emit("propagate",[n,!0],this.nextPromise,!1,!1)})),t.on("propagate",(function(e,r,n){this.getCtx&&!r||(this.getCtx=function(){if(e instanceof Promise)var r=t.context(e);return r&&r.getCtx?r.getCtx():this})}))}(),t}const De={},Ke="setTimeout",Ue="setInterval",Ve="clearTimeout",Ge="-start",Fe=[Ke,"setImmediate",Ue,Ve,"clearImmediate"];function Be(e){const t=function(e){return(e||B.ee).get("timer")}(e);if(De[t.debugId]++)return t;De[t.debugId]=1;var r=(0,W.YM)(t);return r.inPlace(p.gm,Fe.slice(0,2),Ke+"-"),r.inPlace(p.gm,Fe.slice(2,3),Ue+"-"),r.inPlace(p.gm,Fe.slice(3),Ve+"-"),t.on(Ue+Ge,(function(e,t,n){e[0]=r(e[0],"fn-",null,n)})),t.on(Ke+Ge,(function(e,t,n){this.method=n,this.timerDuration=isNaN(e[1])?0:+e[1],e[0]=r(e[0],"fn-",this,n)})),t}const We={};function ze(e){const t=function(e){return(e||B.ee).get("mutation")}(e);if(!p.RI||We[t.debugId])return t;We[t.debugId]=!0;var r=(0,W.YM)(t),n=p.gm.MutationObserver;return n&&(window.MutationObserver=function(e){return this instanceof n?new n(r(e,"fn-")):n.apply(this,arguments)},MutationObserver.prototype=n.prototype),t}const{TZ:qe,d3:Ze,Kp:Ye,$p:Xe,wW:$e,e5:Je,tH:Qe,uP:et,rw:tt,Lc:rt}=je;class nt extends b{static featureName=qe;constructor(e,t=!0){if(super(e,qe,t),!p.RI)return;try{this.removeOnAbort=new AbortController}catch(e){}let r,n=0;const i=this.ee.get("tracer"),o=Le(this.ee),a=Me(this.ee),s=Be(this.ee),c=Z(this.ee),u=this.ee.get("events"),d=ne(this.ee),l=ve(this.ee),f=ze(this.ee);function h(e,t){l.emit("newURL",[""+window.location,t])}function g(){n++,r=window.location.hash,this[et]=(0,S.t)()}function m(){n--,window.location.hash!==r&&h(0,!0);var e=(0,S.t)();this[Je]=~~this[Je]+e-this[et],this[rt]=e}function v(e,t){e.on(t,(function(){this[t]=(0,S.t)()}))}this.ee.on(et,g),a.on(tt,g),o.on(tt,g),this.ee.on(rt,m),a.on($e,m),o.on($e,m),this.ee.on("fn-err",((...t)=>{t[2]?.__newrelic?.[e.agentIdentifier]||(0,x.p)("function-err",[...t],void 0,this.featureName,this.ee)})),this.ee.buffer([et,rt,"xhr-resolved"],this.featureName),u.buffer([et],this.featureName),s.buffer(["setTimeout"+Ye,"clearTimeout"+Ze,et],this.featureName),c.buffer([et,"new-xhr","send-xhr"+Ze],this.featureName),d.buffer([Qe+Ze,Qe+"-done",Qe+Xe+Ze,Qe+Xe+Ye],this.featureName),l.buffer(["newURL"],this.featureName),f.buffer([et],this.featureName),a.buffer(["propagate",tt,$e,"executor-err","resolve"+Ze],this.featureName),i.buffer([et,"no-"+et],this.featureName),o.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"],this.featureName),v(d,Qe+Ze),v(d,Qe+"-done"),v(o,"new-jsonp"),v(o,"jsonp-end"),v(o,"cb-start"),l.on("pushState-end",h),l.on("replaceState-end",h),window.addEventListener("hashchange",h,(0,T.jT)(!0,this.removeOnAbort?.signal)),window.addEventListener("load",h,(0,T.jT)(!0,this.removeOnAbort?.signal)),window.addEventListener("popstate",(function(){h(0,n>1)}),(0,T.jT)(!0,this.removeOnAbort?.signal)),this.abortHandler=this.#n,this.importAggregator(e)}#n(){this.removeOnAbort?.abort(),this.abortHandler=void 0}}var it=i(3333);class ot extends b{static featureName=it.TZ;constructor(e,t=!0){super(e,it.TZ,t);const r=[e.init.page_action.enabled,e.init.performance.capture_marks,e.init.performance.capture_measures,e.init.user_actions.enabled,e.init.performance.resources.enabled];if(p.RI&&(e.init.user_actions.enabled&&(it.Zp.forEach((e=>(0,T.sp)(e,(e=>(0,x.p)("ua",[e],void 0,this.featureName,this.ee)),!0))),it.qN.forEach((e=>(0,T.sp)(e,(e=>(0,x.p)("ua",[e],void 0,this.featureName,this.ee)))))),e.init.performance.resources.enabled&&p.gm.PerformanceObserver?.supportedEntryTypes.includes("resource"))){new PerformanceObserver((e=>{e.getEntries().forEach((e=>{(0,x.p)("browserPerformance.resource",[e],void 0,this.featureName,this.ee)}))})).observe({type:"resource",buffered:!0})}r.some((e=>e))?this.importAggregator(e):this.deregisterDrain()}}var at=i(993),st=i(3785);class ct extends b{static featureName=at.TZ;constructor(e,t=!0){super(e,at.TZ,t);const r=this.ee;this.ee.on("wrap-logger-end",(function([e]){const{level:t,customAttributes:n}=this;(0,st.R)(r,e,n,t)})),this.importAggregator(e)}}new class extends o{constructor(t,r){super(r),p.gm?(this.features={},(0,R.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(w),this.runSoftNavOverSpa=[...this.desiredFeatures].some((e=>e.featureName===a.K7.softNav)),(0,d.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}run(){try{const t=u(this.agentIdentifier),r=[...this.desiredFeatures];r.sort(((e,t)=>a.P3[e.featureName]-a.P3[t.featureName])),r.forEach((r=>{if(!t[r.featureName]&&r.featureName!==a.K7.pageViewEvent)return;if(this.runSoftNavOverSpa&&r.featureName===a.K7.spa)return;if(!this.runSoftNavOverSpa&&r.featureName===a.K7.softNav)return;const n=function(e){switch(e){case a.K7.ajax:return[a.K7.jserrors];case a.K7.sessionTrace:return[a.K7.ajax,a.K7.pageViewEvent];case a.K7.sessionReplay:return[a.K7.sessionTrace];case a.K7.pageViewTiming:return[a.K7.pageViewEvent];default:return[]}}(r.featureName).filter((e=>!(e in this.features)));n.length>0&&(0,e.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)}))}catch(t){(0,e.R)(22,t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,R.Zm)();delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return r.ee.get(this.agentIdentifier).abort(),!1}}}({features:[he,w,N,Ne,Oe,O,M,ot,ct,Pe,nt],loaderType:"spa"})})()})();</script>
+<meta content='width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0' name='viewport'>
+<meta content='en-us' http-equiv='content-language'>
+<link href='https://trailhead.salesforce.com/content/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent' hreflang='en' rel='alternate'>
+<link href='https://trailhead.salesforce.com/de/content/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent' hreflang='de' rel='alternate'>
+<link href='https://trailhead.salesforce.com/it/content/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent' hreflang='it' rel='alternate'>
+<link href='https://trailhead.salesforce.com/fr/content/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent' hreflang='fr' rel='alternate'>
+<link href='https://trailhead.salesforce.com/es/content/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent' hreflang='es' rel='alternate'>
+<link href='https://trailhead.salesforce.com/es-MX/content/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent' hreflang='es-mx' rel='alternate'>
+<link href='https://trailhead.salesforce.com/pt-BR/content/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent' hreflang='pt-br' rel='alternate'>
+<link href='https://trailhead.salesforce.com/ja/content/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent' hreflang='ja' rel='alternate'>
+<link href='https://trailhead.salesforce.com/ko/content/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent' hreflang='ko' rel='alternate'>
+<link href='https://trailhead.salesforce.com/zh-CN/content/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent' hreflang='zh-cn' rel='alternate'>
+<link href='https://trailhead.salesforce.com/content/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent' hreflang='x-default' rel='alternate'>
+
+<link rel="canonical" href="https://trailhead.salesforce.com/content/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent">
+<meta name="apple-itunes-app" content="app-id=1478801670"></meta>
+<meta name="slack-app-id" content="A02CBL2KKDE"></meta>
+
+<link rel="stylesheet" href="/assets/application-4e74b874ef81c301345636def3a6e19b4c5ecbececd5d886bb27f5f61e2202d1.css" media="all" />
+
+<script type='application/ld+json'>
+{
+  "@context": "https://schema.org",
+  "@type": ["Course", "CreativeWork"],
+  "name": "Configure an Agentforce Service Agent",
+  "description": "Create an Agentforce Service Agent to assist with recommendations and bookings.",
+  "isAccessibleForFree": "False",
+  "hasPart": {
+    "@type": "WebPageElement",
+    "isAccessibleForFree": "False",
+    "cssSelector" : ".th-unit-hidden-content"
+  },
+  "offers": {
+    "@type": "Offer",
+    "category": "Free"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "Online",
+    "courseWorkload": "PT30M"
+  },
+  "provider": {
+    "@type": "Organization",
+    "@id": "https://trailhead.salesforce.com/#organization",
+    "name": "Trailhead",
+    "url": "https://trailhead.salesforce.com/#organization"
+  }
+}
+
+</script>
+
+<link rel="stylesheet" href="/packs/css/libs-37c1918f.css" media="screen" />
+<link rel="stylesheet" href="/packs/css/styles-e892cfec.css" media="screen" />
+<link rel="stylesheet" href="/packs/css/atomic-6dbb6162.css" media="screen" />
+<link rel="stylesheet" href="/assets/print-291a9c148552af775ae0646e7d4bfb87ac4f0e77f40cbd214234e7aa0eb39509.css" media="print" />
+<script type='module'>
+import { set } from "https://ui.trailhead.com/components/v6.2.17/modules/trailhead-client-env.js";
+import { setLocale } from "https://ui.trailhead.com/components/v6.2.17/modules/trailhead-client-locale.js";
+set("DEBUG", false);
+setLocale("en");
+
+
+</script>
+<script type='module'>
+import { set } from "https://ui.trailhead.com/components/v6.2.17/modules/trailhead-client-env.js";
+set("API_HOST", "https://trailhead.salesforce.com");
+
+
+</script>
+<script type='module'>
+import { set } from "https://ui.trailhead.com/components/v6.2.17/modules/trailhead-client-env.js";
+set("EXPERIENCE_API_HOST", "https://mobile.api.trailhead.com/graphql");
+
+
+</script>
+<script type='module'>
+import { set } from "https://ui.trailhead.com/components/v6.2.17/modules/trailhead-client-env.js";
+set("TBID_COMMUNITY_URL", "https://trailblazer.me");
+
+
+</script>
+<script type='module'>
+import { set } from "https://ui.trailhead.com/components/v6.2.17/modules/trailhead-client-env.js";
+set("TBID_PROFILE_URL", "https://www.salesforce.com/trailblazer/");
+
+
+</script>
+
+<script id="sf_access_token_script">
+  try {
+      window.localStorage.removeItem("sf_access_token");
+  } catch (e) {
+      console.error('Error setting/removing access token:', e);
+  }
+  document.getElementById("sf_access_token_script").remove();
+</script>
+
+<script>
+  window.thComponentsUrl = function(path) {
+    return "https://ui.trailhead.com/components/v6.2.17" + path;
+  }
+</script>
+<div id='https://ui.trailhead.com/lx-components/v1.13.19'></div>
+<link href='https://ui.trailhead.com/components/v6.2.17/css/tds.css' rel='stylesheet'>
+<link href='https://ui.trailhead.com/components/v6.2.17/css/tds-theme-provider.css' rel='stylesheet'>
+<script src='https://ui.trailhead.com/components/v6.2.17/modules/th-org-picker.js' type='module'></script>
+<script src='https://ui.trailhead.com/components/v6.2.17/modules/tds-button-link.js' type='module'></script>
+<script src='https://ui.trailhead.com/components/v6.2.17/modules/tds-modal.js' type='module'></script>
+<script src='https://ui.trailhead.com/components/v6.2.17/modules/tds-button.js' type='module'></script>
+<script src='https://ui.trailhead.com/components/v6.2.17/modules/th-badge-rating.js' type='module'></script>
+<script src='https://ui.trailhead.com/components/v6.2.17/modules/tds-button-icon-link.js' type='module'></script>
+<script src='https://ui.trailhead.com/components/v6.2.17/modules/tds-icon.js' type='module'></script>
+<script src='https://ui.trailhead.com/components/v6.2.17/modules/th-alert.js' type='module'></script>
+<script src='https://ui.trailhead.com/components/v6.2.17/modules/th-footer.js' type='module'></script>
+<style>
+  :root {
+    --tds-z-index-tooltip: 90000;
+    --tds-z-index-overlay: 29998;
+    --tds-z-index-modal: 29999;
+  }
+</style>
+
+<script>
+  window.locale = "en"
+</script>
+<script src='/api/v1/ui/auth.js'></script>
+
+<script src="/packs/js/vendorCommon-546ad5941e6a14670d0b.chunk.js"></script>
+<script src="/packs/js/vendor-d96d0ededbfe1f7f82e6.chunk.js"></script>
+<script src="/packs/js/client-side-2661c0f8204daba76857.js"></script>
+<script src="/packs/js/locales-85d455e48aeeb67a5594.chunk.js"></script>
+<script src="/packs/js/components-e7a6b0776863f3dc1f5e.js"></script>
+<script src="/packs/js/ua-tracking-0964e325a78e0268cd6b.js"></script>
+<script src="/packs/js/visitor-cookies-3f66dd325d99ca158246.js"></script>
+<script src="/packs/js/cookie-consent-callbacks-b9b84a75e78f5c678f7d.js"></script>
+<script src="/packs/js/mobile-a11y-1341a7441c83784f5988.js"></script>
+<script src="/packs/js/unit-adjustments-3a31a69a33345509ef9f.js"></script>
+<script src="/packs/js/vendors~unitPageDigital-c0479189a66bb4507bc0.chunk.js"></script>
+<script src="/packs/js/unitPageDigital-c435e50c382690727330.js"></script>
+<script src="/packs/js/highlightSyntax-0321fd36c7fa11a9e975.js"></script>
+
+<meta content='unit_viewed' name='ua:event_name'>
+<meta content='{&quot;lang&quot;:&quot;en&quot;,&quot;unit_id&quot;:2229931,&quot;unit_api_name&quot;:&quot;configure-an-agentforce-service-agent&quot;,&quot;unit_uid&quot;:&quot;02df53f6-9b24-a190-7c11-8f8e20a4b00e&quot;,&quot;namespace_api_name&quot;:&quot;learn&quot;}' name='ua:event_properties'>
+
+<script id="tbid_script">
+    try {
+        window.localStorage.removeItem("tbid");
+    } catch (e) {
+        console.error('Error setting/removing tbid:', e);
+    }
+    document.getElementById("tbid_script").remove();
+</script>
+
+<script type='application/ld+json'>
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Trailhead",
+  "alternateName": "Trailhead by Salesforce",
+  "logo": "https://trailhead.salesforce.com/logo.png",
+  "url": "https://trailhead.salesforce.com",
+  "description": "Everyone can learn Salesforce. Whether you are an admin, user, or developer, there is a trail for you.",
+  "telephone": "1-800-664-9073",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Salesforce Tower, 415 Mission Street, 3rd Floor",
+    "addressLocality": "San Francisco",
+    "addressCountry": "US",
+    "addressRegion": "CA",
+    "postalCode": "94105"
+  }
+}
+
+</script>
+
+</head>
+<body class='theme--trailhead trailhead-locale-en' id='atomic'>
+<div id='main-wrapper'>
+<style>
+  .th-branding__border-color {
+    border-color: #00a1df !important;
+  }
+  .th-branding__background-color--primary-light {
+    background-color: rgba(0, 161, 223, 0.05) !important;
+  }
+  
+  .th-branding__background-color--secondary {
+      background-color: #00407e !important;
+  }
+</style>
+
+
+  
+<script src="/packs/js/digital-nav-c51c10e1116a02713bf5.js"></script>
+
+<a class="skip-nav" href="#main">Skip to main content</a>
+
+<div id="global-nav-container">
+  
+</div>
+
+<script src="https://a.sfdcstatic.com/digital/xsf/components/v1-stable/navs.js" type="module"></script>
+
+<script src="/assets/digital_header-e886c8498fb58f554ada02cb6e441974f6a941ba88f0ba9d6368321298f321e3.js" async="async" data-property-name="trailhead" data-community-uri="https://trailblazer.me" data-community-api-url="https://community.api.trailhead.com" data-context-nav-config="{&quot;ID&quot;:1,&quot;newWindowAlt&quot;:&quot;link opens in new window&quot;,&quot;isLogoEnabled&quot;:false,&quot;variation&quot;:&quot;static&quot;,&quot;propertyTitle&quot;:{&quot;ID&quot;:2,&quot;label&quot;:&quot;Trailhead&quot;,&quot;url&quot;:&quot;/&quot;},&quot;propertyLogo&quot;:{&quot;ID&quot;:3,&quot;alt&quot;:&quot;Trailhead&quot;},&quot;menuGroup&quot;:{&quot;ID&quot;:4,&quot;menuItems&quot;:[{&quot;ID&quot;:5,&quot;link&quot;:{&quot;ID&quot;:6,&quot;label&quot;:&quot;Home&quot;,&quot;url&quot;:&quot;/&quot;}},{&quot;ID&quot;:7,&quot;title&quot;:&quot;Learn&quot;,&quot;submenu&quot;:[{&quot;ID&quot;:8,&quot;menuItems&quot;:[{&quot;ID&quot;:9,&quot;link&quot;:{&quot;ID&quot;:10,&quot;label&quot;:&quot;Trails&quot;,&quot;url&quot;:&quot;/trails&quot;},&quot;description&quot;:&quot;Follow guided learning paths&quot;},{&quot;ID&quot;:11,&quot;link&quot;:{&quot;ID&quot;:12,&quot;label&quot;:&quot;Modules&quot;,&quot;url&quot;:&quot;/modules&quot;},&quot;description&quot;:&quot;Learn new skills in bite-sized units&quot;},{&quot;ID&quot;:13,&quot;link&quot;:{&quot;ID&quot;:14,&quot;label&quot;:&quot;Projects&quot;,&quot;url&quot;:&quot;/projects&quot;},&quot;description&quot;:&quot;Get hands-on with step-by-step instructions&quot;},{&quot;ID&quot;:15,&quot;link&quot;:{&quot;ID&quot;:16,&quot;label&quot;:&quot;Trailmixes&quot;,&quot;url&quot;:&quot;/trailmixes&quot;},&quot;description&quot;:&quot;Create and follow custom learning playlists&quot;}],&quot;eyebrowHeading&quot;:&quot;Grow your Salesforce expertise&quot;,&quot;hasSeparator&quot;:true},{&quot;ID&quot;:17,&quot;menuItems&quot;:[{&quot;ID&quot;:18,&quot;link&quot;:{&quot;ID&quot;:19,&quot;label&quot;:&quot;Trailblazer Quests&quot;,&quot;url&quot;:&quot;/quests&quot;},&quot;description&quot;:&quot;Learn new skills and win fun prizes&quot;},{&quot;ID&quot;:20,&quot;link&quot;:{&quot;ID&quot;:21,&quot;label&quot;:&quot;Trailhead Mobile App&quot;,&quot;url&quot;:&quot;/trailhead-go&quot;},&quot;description&quot;:&quot;Skill up anytime, anywhere&quot;},{&quot;ID&quot;:22,&quot;link&quot;:{&quot;ID&quot;:23,&quot;label&quot;:&quot;Instructor-led Training&quot;,&quot;url&quot;:&quot;https://trailheadacademy.salesforce.com/&quot;,&quot;target&quot;:&quot;_blank&quot;},&quot;description&quot;:&quot;Learn directly from experts&quot;}],&quot;eyebrowHeading&quot;:&quot;Other learning tools&quot;,&quot;hasSeparator&quot;:true}]},{&quot;ID&quot;:24,&quot;title&quot;:&quot;Community&quot;,&quot;submenu&quot;:[{&quot;ID&quot;:25,&quot;menuItems&quot;:[{&quot;ID&quot;:26,&quot;link&quot;:{&quot;ID&quot;:27,&quot;label&quot;:&quot;Feed&quot;,&quot;url&quot;:&quot;/trailblazer-community/feed&quot;},&quot;description&quot;:&quot;Ask and answer questions to build your skills&quot;},{&quot;ID&quot;:28,&quot;link&quot;:{&quot;ID&quot;:29,&quot;label&quot;:&quot;Groups&quot;,&quot;url&quot;:&quot;/trailblazer-community/groups&quot;},&quot;description&quot;:&quot;Meet and collaborate with Trailblazers to grow your network&quot;},{&quot;ID&quot;:30,&quot;link&quot;:{&quot;ID&quot;:31,&quot;label&quot;:&quot;Topics&quot;,&quot;url&quot;:&quot;/trailblazer-community/topics&quot;},&quot;description&quot;:&quot;Discover featured and trending topics&quot;},{&quot;ID&quot;:32,&quot;link&quot;:{&quot;ID&quot;:33,&quot;label&quot;:&quot;Group Meetings&quot;,&quot;url&quot;:&quot;/trailblazer-community/meetings&quot;,&quot;target&quot;:&quot;&quot;},&quot;description&quot;:&quot;Join local community group meetings&quot;},{&quot;ID&quot;:34,&quot;link&quot;:{&quot;ID&quot;:35,&quot;label&quot;:&quot;360 Blog&quot;,&quot;url&quot;:&quot;https://www.salesforce.com/blog/category/trailblazer/&quot;,&quot;target&quot;:&quot;_blank&quot;},&quot;description&quot;:&quot;Learn about new Salesforce innovations&quot;}],&quot;eyebrowHeading&quot;:&quot;Connect with the Trailblazer Community&quot;}]},{&quot;ID&quot;:36,&quot;title&quot;:&quot;Career Growth&quot;,&quot;submenu&quot;:[{&quot;ID&quot;:37,&quot;menuItems&quot;:[{&quot;ID&quot;:38,&quot;link&quot;:{&quot;ID&quot;:39,&quot;label&quot;:&quot;Trailblazer Career Marketplace&quot;,&quot;url&quot;:&quot;/careers/overview&quot;},&quot;description&quot;:&quot;Showcase your Salesforce expertise, connect with employers, and browse resources to grow your career&quot;}],&quot;eyebrowHeading&quot;:&quot;Build your Salesforce career&quot;,&quot;hasSeparator&quot;:true},{&quot;ID&quot;:40,&quot;menuItems&quot;:[{&quot;ID&quot;:41,&quot;link&quot;:{&quot;ID&quot;:42,&quot;label&quot;:&quot;Role-Based Career Paths&quot;,&quot;url&quot;:&quot;/career-path&quot;},&quot;description&quot;:&quot;Explore which career is right for you and learn role-based skills&quot;}],&quot;eyebrowHeading&quot;:&quot;Career resources&quot;,&quot;hasSeparator&quot;:true}]},{&quot;ID&quot;:43,&quot;title&quot;:&quot;Credentials&quot;,&quot;submenu&quot;:[{&quot;ID&quot;:44,&quot;menuItems&quot;:[{&quot;ID&quot;:45,&quot;link&quot;:{&quot;ID&quot;:46,&quot;label&quot;:&quot;Certifications&quot;,&quot;url&quot;:&quot;/credentials/administratoroverview&quot;},&quot;description&quot;:&quot;Prove your product expertise with globally recognized credentials&quot;},{&quot;ID&quot;:47,&quot;link&quot;:{&quot;ID&quot;:48,&quot;label&quot;:&quot;Superbadges \u0026 Super Sets&quot;,&quot;url&quot;:&quot;/superbadges&quot;},&quot;description&quot;:&quot;Prove your skills with real world business challenges&quot;}],&quot;eyebrowHeading&quot;:&quot;Earn resume-worthy credentials&quot;,&quot;hasSeparator&quot;:true},{&quot;ID&quot;:49,&quot;menuItems&quot;:[{&quot;ID&quot;:50,&quot;link&quot;:{&quot;ID&quot;:51,&quot;label&quot;:&quot;Maintain Certifications&quot;,&quot;url&quot;:&quot;/content/learn/trails/maintain-your-salesforce-certifications&quot;},&quot;description&quot;:&quot;Annual renewal of your certifications&quot;},{&quot;ID&quot;:52,&quot;link&quot;:{&quot;ID&quot;:53,&quot;label&quot;:&quot;Verify Certifications&quot;,&quot;url&quot;:&quot;/credentials/verification&quot;},&quot;description&quot;:&quot;Confirm certification status&quot;},{&quot;ID&quot;:54,&quot;link&quot;:{&quot;ID&quot;:55,&quot;label&quot;:&quot;Certification-focused Trails&quot;,&quot;url&quot;:&quot;/search/learning?sort=RELEVANCE\u0026tab=LEARNING\u0026intent=earn-a-certification&quot;},&quot;description&quot;:&quot;Prepare for your certification&quot;}],&quot;eyebrowHeading&quot;:&quot;Trailblazer resources&quot;}]},{&quot;ID&quot;:56,&quot;title&quot;:&quot;Help&quot;,&quot;submenu&quot;:[{&quot;ID&quot;:57,&quot;menuItems&quot;:[{&quot;ID&quot;:58,&quot;link&quot;:{&quot;ID&quot;:59,&quot;label&quot;:&quot;Salesforce Help&quot;,&quot;url&quot;:&quot;https://help.salesforce.com/services/auth/sso/trailheadlogincommunity?startURL=/s&quot;,&quot;target&quot;:&quot;_blank&quot;},&quot;description&quot;:&quot;Get help with Trailhead, Instructor-led Training, Certifications, Salesforce products, and more&quot;},{&quot;ID&quot;:60,&quot;link&quot;:{&quot;ID&quot;:61,&quot;label&quot;:&quot;My Cases&quot;,&quot;url&quot;:&quot;https://help.salesforce.com/services/auth/sso/trailheadlogincommunity?startURL=/s/cases&quot;,&quot;target&quot;:&quot;_blank&quot;},&quot;description&quot;:&quot;Review and receive updates about submitted cases&quot;},{&quot;ID&quot;:62,&quot;link&quot;:{&quot;ID&quot;:63,&quot;label&quot;:&quot;Hands-On Challenge Help&quot;,&quot;url&quot;:&quot;/trailblazer-community/topics/trailheadchallenges?sort=LAST_MODIFIED_DATE_DESC\u0026ref=nav&quot;},&quot;description&quot;:&quot;Get guidance from experts in the Trailblazer Community&quot;},{&quot;ID&quot;:64,&quot;link&quot;:{&quot;ID&quot;:65,&quot;label&quot;:&quot;Trailhead Knowledge Articles&quot;,&quot;url&quot;:&quot;/search/learning?sort=RELEVANCE\u0026tab=DOCUMENTATION\u0026object_type=trailhead_knowledge_articles&quot;},&quot;description&quot;:&quot;Search knowledge articles and troubleshoot issues&quot;}],&quot;eyebrowHeading&quot;:&quot;All support&quot;,&quot;hasSeparator&quot;:true},{&quot;ID&quot;:66,&quot;menuItems&quot;:[{&quot;ID&quot;:67,&quot;link&quot;:{&quot;ID&quot;:68,&quot;label&quot;:&quot;IdeaExchange&quot;,&quot;url&quot;:&quot;https://ideas.salesforce.com/&quot;,&quot;target&quot;:&quot;_blank&quot;},&quot;description&quot;:&quot;Share and vote on ideas for improving Salesforce products&quot;},{&quot;ID&quot;:69,&quot;link&quot;:{&quot;ID&quot;:70,&quot;label&quot;:&quot;Be A Trailblazer&quot;,&quot;url&quot;:&quot;https://www.salesforce.com/company/be-a-trailblazer/?sfdc-redirect=387&quot;,&quot;target&quot;:&quot;_blank&quot;},&quot;description&quot;:&quot;Learn what it means to be a Trailblazer&quot;}],&quot;eyebrowHeading&quot;:&quot;Trailblazer resources&quot;}]}]},&quot;utilityNavigation&quot;:{&quot;ID&quot;:71,&quot;ctamain&quot;:{&quot;ID&quot;:72,&quot;cta&quot;:{&quot;ID&quot;:73,&quot;label&quot;:&quot;Sign Up&quot;,&quot;ariaLabel&quot;:&quot;Sign Up&quot;,&quot;url&quot;:&quot;/sessions/users/new?type=tbidsignup&quot;,&quot;variant&quot;:&quot;primary&quot;,&quot;target&quot;:&quot;_blank&quot;},&quot;inMobileHeader&quot;:false}}}" data-global-nav-config="{&quot;id&quot;:&quot;global-nav&quot;,&quot;hideContent&quot;:&quot;false&quot;,&quot;origin&quot;:&quot;https://wp.sfdcdigital.com/en-US/wp-json&quot;,&quot;tbidModuleOverride&quot;:&quot;https://trailhead.salesforce.com/assets/iis-tbid-45ca03ad5930d87d209d07efe9321ed3e51325405a9b6e795e29e923ef4f08b0.js&quot;,&quot;contextNavEnabled&quot;:&quot;true&quot;,&quot;contextMenuOverride&quot;:&quot;true&quot;,&quot;search&quot;:&quot;true&quot;,&quot;searchOrganizationId&quot;:&quot;org62salesforce&quot;,&quot;searchAccessToken&quot;:&quot;xx358122e7-f516-40e1-8467-8837d29c6998&quot;,&quot;searchPlaceholder&quot;:&quot;Search Trailhead&quot;,&quot;searchSiteUrl&quot;:&quot;https://trailhead.salesforce.com/search/learning?tab=LEARNING&quot;,&quot;searchSite&quot;:&quot;th&quot;,&quot;searchHub&quot;:&quot;TrailheadUnified&quot;,&quot;searchPipeline&quot;:&quot;Trailhead&quot;,&quot;locale&quot;:&quot;&quot;,&quot;searchWithQuickLinks&quot;:&quot;false&quot;,&quot;searchLocale&quot;:&quot;en&quot;,&quot;contactMenuOverride&quot;:&quot;true&quot;,&quot;contactLinksOverride&quot;:&quot;[{\&quot;label\&quot;:\&quot;Contact Sales\&quot;,\&quot;url\&quot;:\&quot;https://www.salesforce.com/company/contact-us/?d=cta-header-9\&quot;,\&quot;target\&quot;:\&quot;_self\&quot;},{\&quot;label\&quot;:\&quot;Contact Support\&quot;,\&quot;url\&quot;:\&quot;https://help.salesforce.com/s/support\&quot;,\&quot;target\&quot;:\&quot;_self\&quot;},{\&quot;label\&quot;:\&quot;Contact Trailhead\&quot;,\&quot;url\&quot;:\&quot;https://trailhead.salesforce.com/help?support=home\&quot;,\&quot;target\&quot;:\&quot;_self\&quot;}]&quot;,&quot;loginTrailblazerLabel&quot;:&quot;Trailhead&quot;,&quot;searchOriginLevelTwo&quot;:&quot;null&quot;}" data-subnav-present="false"></script>
+
+  <div class='th-sticky-breadcrumb'>
+<div class='th-sticky-breadcrumb__content th-bg--white'>
+<div class='slds-container_x-large slds-container_center slds-p-horizontal_medium th-text--small slds-p-vertical_medium'>
+<nav aria-label='Breadcrumbs' role='navigation'>
+<ol class='th-breadcrumb slds-breadcrumb slds-list_horizontal slds-wrap'>
+<li class='th-breadcrumb__item slds-breadcrumb__item'>
+<a class="th-breadcrumb__link" href="/content/learn/projects/quick-start-build-your-first-agent-with-agentforce">Quick Start: Build Your First Agent with Agentforce</a>
+<div class='th-breadcrumb__item__icon'>
+<span class='slds-icon_container slds-icon-utility-chevronright' title=''>
+<svg aria-hidden='true' class='slds-icon_xx-small'>
+<use xlink:href='/assets/icons/utility-sprite/svg/symbols-e6382c2038036b01b4230804b934660723c3fa4f23aab0ef6bfce6541ad19590.svg#chevronright' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</span>
+
+</div>
+</li>
+<li class='th-breadcrumb__item slds-breadcrumb__item'>
+<div data-react-class="units/UnitsBreadcrumbPopover" data-react-props="{&quot;popover&quot;:true,&quot;headingTitle&quot;:&quot;Quick Start: Build Your First Agent with Agentforce&quot;,&quot;headingImgUrl&quot;:&quot;https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/projects/quick-start-build-your-first-agent-with-agentforce/e395818cbaaa3c9d8bc55da6d497bca2_badge.png&quot;,&quot;contentTypeLabel&quot;:&quot;step&quot;,&quot;contentPath&quot;:&quot;/content/learn/projects/quick-start-build-your-first-agent-with-agentforce&quot;,&quot;units&quot;:[{&quot;title&quot;:&quot;Configure an Agentforce Service Agent&quot;,&quot;path&quot;:&quot;/content/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent&quot;,&quot;time&quot;:30,&quot;isComplete&quot;:false,&quot;is_current_page&quot;:true}],&quot;label&quot;:&quot;Configure an Agentforce Service Agent&quot;}" data-react-cache-id="units/UnitsBreadcrumbPopover-0"></div>
+</li>
+</ol>
+</nav>
+
+</div>
+</div>
+</div>
+
+
+
+  <script>
+  window.Trailhead = window.Trailhead || {};
+  window.Trailhead.ContentService = window.Trailhead.ContentService || {};
+  window.Trailhead.ContentService.inPreview = false
+</script>
+
+  <th-alert cookie-key='notifier_2ff2888bd3252414b8bf82a4b765a6f1' variant='info'>
+Join us at TDX in San Francisco or on Salesforce+ on March 5-6 for the Developer Conference for the AI Agent Era. <a href='https://www.salesforce.com/tdx/?d=701ed00000CO4LKAA1' target='_blank' rel='noopener'>Register now</a>.
+</th-alert>
+
+
+
+<main id='main'>
+<div class='th-bg--light' style='position: relative;'>
+<div class='slds-container_x-large slds-container_center slds-p-around_x-large' id='th-unit-content'>
+<div class='slds-grid'>
+<div class='slds-size_3-of-12 slds-col slds-order_2 slds-show_large slds-p-left_x-large unit-sidebar slds-is-relative'>
+<div class='slds-m-bottom_medium' id='unit-sidebar'>
+<h3 class='th-text--small th-text--bold'>
+Time Estimate
+</h3>
+<div class='sidebar-content'>
+<p class='slds-text-body_small'>
+<span class='slds-icon_container slds-icon-utility-clock' title=''>
+<svg aria-hidden='true' class='slds-icon slds-icon_x-small slds-icon-text-default'>
+<use xlink:href='/assets/icons/utility-sprite/svg/symbols-e6382c2038036b01b4230804b934660723c3fa4f23aab0ef6bfce6541ad19590.svg#clock' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</span>
+
+About <b>30</b> mins
+</p>
+</div>
+<div class='slds-m-top_x-large'>
+<h3 class='th-text--small th-text--bold'>
+Topics
+</h3>
+<div class='topic-list-nav slds-m-bottom_large slds-m-top_x-small'>
+<ul class='slds-text-body_small'>
+<li><a href="#coral-cloud-resorts-agentforce">Coral Cloud Resorts + Agentforce</a></li><li><a href="#enable-agents-publish-the-experience-cloud-site-and-more">Enable Agents, Publish the Experience Cloud Site, and More</a></li><li><a href="#create-the-agent">Create the Agent</a></li><li><a href="#test-the-agent">Test the Agent</a></li><li><a href="#publish-and-update">Publish and Update</a></li><li><a href="#add-the-agent-to-the-coral-cloud-site">Add the Agent to the Coral Cloud Site</a></li><li><a href="#resources">Resources</a></li>
+<li class='divider'></li>
+<li class='topic-challenge slds-p-vertical_x-small slds-m-vertical_small'>
+<a class="slds-grid slds-grid_align-spread slds-grid_vertical-align-center slds-p-vertical_x-small" href="#challenge"><span>
+Challenge
+</span>
+<span class='slds-badge th-badge--primary'>
++500 points
+</span>
+</a></li>
+<li class='divider'></li>
+</ul>
+</div>
+
+<h2 class="help-link-heading">Looking for Help?</h2>
+
+<div style="margin-bottom: 16px;">
+    <a
+  data-controller="button-link"
+  class="button-link button-link--has-subtext button-link--flex"
+  href="/trailblazer-community/topics/trailheadchallenges?sort=LAST_MODIFIED_DATE_DESC&search=Configure+an+Agentforce+Service+Agent&ref=unit" target="_blank" data-cta_type="hoc_help_link" data-unit_name="configure-an-agentforce-service-agent"
+>
+    <tds-icon symbol="question" class="button-link__icon"></tds-icon>
+
+  <span class="button-link__text">Ask the Community</span>
+</a>
+
+  <p class="button-link__subtext">Expect a response within <strong>24-48</strong> hours from Help or the community.</p>
+
+</div>
+
+<div style="margin-bottom: 16px;">
+  <a
+  data-controller="button-link"
+  class="button-link button-link--flex"
+  href="https://help.salesforce.com/services/auth/sso/trailheadlogincommunity?startURL=%2Fs%2Fcase-submission%3FtopicId%3Da6CAE0000003qPO2AY_en_US_P%26badgeName%3Dconfigure-an-agentforce-service-agent" target="_blank" data-trigger_evt_name="toggleModalfeedback_modal" data-prevent_default="true" data-cta_type="help_feedback_link" data-unit_name="configure-an-agentforce-service-agent" data-page_location="sidebar" data-locale="en"
+>
+    <tds-icon symbol="answer" class="button-link__icon"></tds-icon>
+
+  <span class="button-link__text">Share Your Feedback</span>
+</a>
+
+
+</div>
+
+
+
+  <div data-controller="sfdc-product-links">
+    <article class="th-sfdc-product-links_container">
+
+          <h4 class="th-sfdc-product-links_heading">
+            Agentforce Resources
+          </h4>
+
+          <aside class="th-sfdc-product-links_link-container">
+            <a target="_blank" data-lang="en" data-api-name="configure-an-agentforce-service-agent" data-assessment-type="hoc" data-content-uid="02df53f6-9b24-a190-7c11-8f8e20a4b00e" data-content-type="Th::Unit" data-cta-type="product" data-cta-url="https://www.salesforce.com/einsteincopilot?d=701ed000001SBEVAA4" data-title="Learn more about Agentforce" data-product-name="Agentforce" data-product-filter="d4e97755-9465-4769-9171-7e836b64e542" data-component-type="sidebar" data-product-count="1" class="sfdc-product-link" href="https://www.salesforce.com/einsteincopilot?d=701ed000001SBEVAA4">Learn more about Agentforce</a>
+          </aside>
+    </article>
+
+  </div>
+
+
+</div>
+</div>
+
+</div>
+<article class='slds-large-size_9-of-12 slds-size_12-of-12 slds-col slds-order_1'>
+<div data-react-class="units/SpecialityOrgManager" data-react-props="{&quot;unitUid&quot;:&quot;02e90479-9ba1-6b49-14ba-00c8ee4eb4b0&quot;,&quot;moduleApiName&quot;:&quot;quick-start-build-your-first-agent-with-agentforce&quot;,&quot;unitApiName&quot;:&quot;configure-an-agentforce-service-agent&quot;,&quot;authenticated&quot;:false,&quot;authorizedAccount&quot;:{},&quot;productLabel&quot;:&quot;Agentforce&quot;,&quot;tbidEmail&quot;:null}" data-react-cache-id="units/SpecialityOrgManager-0"></div>
+<h1 class='slds-p-top_small slds-text-heading_large'>
+Configure an Agentforce Service Agent
+</h1>
+
+<div class='unit-content'>
+<p>In this project, you’ll:</p><ul style="list-style: disc;">
+<li style="list-style-type: inherit;">Create an Agentforce Service Agent through guided setup.
+<br>
+</li>
+<li style="list-style-type: inherit;">Associate topics and actions to the Service Agent. 
+<br>
+</li>
+<li style="list-style-type: inherit;">Build custom agent actions with flows.
+<br>
+</li>
+<li style="list-style-type: inherit;">Update an existing deployment flow.
+<br>
+</li>
+</ul><h2 id="coral-cloud-resorts-agentforce"><span>Coral Cloud Resorts + Agentforce</span></h2><p>Coral Cloud Resorts is known for two things: amazing destination activities and top-notch customer service. Business is booming. Coral Cloud’s customer service agents are busy providing activity recommendations and booking activities for clients. With the busy season upcoming, Coral Cloud Resorts needs to scale its service assistance quickly. If only there was a tool to help. Agentforce to the rescue! An Agentforce Service Agent can assist Coral Cloud clients with experience availability, booking, and more.</p><h2 id="enable-agents-publish-the-experience-cloud-site-and-more"><span>Enable Agents, Publish the Experience Cloud Site, and More</span></h2><p>Step one of building an agent is enabling all of the required org features.</p><p style="padding-left: 48.0px; margin-left: 48.0px;"><strong>
+</strong></p><ol style="list-style: decimal;">
+<li style="list-style-type: inherit;">Click <img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent/images/ab047945bffb956aeb7960fd0ab5675d_kix.bqut1tfoky6q.jpg" alt="setup icon" width="25.0" class="image"> and click <strong>Setup</strong>. The Setup page opens in a new tab.
+<br>
+</li>
+<li style="list-style-type: inherit;">In the Setup Quick Find, search for and select <strong>Einstein Setup</strong>. 
+<br>
+</li>
+<li style="list-style-type: inherit;">Click the <strong>Turn on Einstein</strong> toggle, and make sure Einstein is <strong>On</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Refresh your browser to reload Setup.
+<br>
+</li>
+<li style="list-style-type: inherit;">In the Setup Quick Find, search for and select <strong>Agents</strong>. 
+<br>
+</li>
+<li style="list-style-type: inherit;">Click the <strong>Agentforce</strong> toggle, and ensure it is set to <strong>On</strong>. 
+<br>
+</li>
+</ol><p><img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent/images/b0cbd3193579535610b7ad9d16873196_kix.9opud82kk064.png" alt="Einstein Copilot for Salesforce toggle set to On." width="912.0" class="image"></p><h3>Publish the Experience Cloud Site</h3><p>The agent is deployed via Coral Cloud’s Experience Cloud site. To prepare for deployment, get the Experience Cloud site ready for the new agent.
+</p><ol style="list-style: decimal;">
+<li style="list-style-type: inherit;">In the Setup Quick Find, search and select <strong>All Sites</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Click <strong>Builder</strong> next to the coral-cloud<strong> </strong>site. If a popup appears, click <strong>OK</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Click <strong>Publish</strong> in the upper right corner. 
+<br>
+</li>
+<li style="list-style-type: inherit;">Click <strong>Publish </strong>in the confirmation window.
+<br>
+</li>
+<li style="list-style-type: inherit;">Click <strong>Got It</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Click the <strong>Experience Builder menu</strong> <img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent/images/bbd72ff753e88d31e0a777672827d50f_kix.5pu7ossb88y8.png" alt="Experience Builder menu icon" width="29.243931428571425" class="image"> . 
+<br>
+</li>
+<li style="list-style-type: inherit;">Click <strong>Salesforce Setup</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Refresh your browser to reload Setup. Feel free to close the Experience Site browser tab.
+<br>
+</li>
+</ol><h3>Add a Permission Set to the Agent’s User Profile</h3><p>The new agent will have a user profile associated with it. However, additional permissions need to be added to this user profile.
+</p><ol style="list-style: decimal;">
+<li style="list-style-type: inherit;">Search for <span><code>Users</code></span> in the Setup Quick Find and select <strong>Users</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Click the <strong>EinsteinServiceAgent </strong>User.
+<br>
+</li>
+<li style="list-style-type: inherit;">Scroll down to the Permission Set Assignments section and click <strong>Edit Assignments</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Select the <strong>Service Agent Permissions </strong>Permission Set and click the <strong>add arrow</strong> to add to the Enabled Permission Sets list.<br>Note: There should now be two listings in the Enabled Permission Sets list: Agentforce Service Agent User and Service Agent Permissions.
+<br>
+</li>
+<li style="list-style-type: inherit;">Click <strong>Save</strong>.
+<br>
+</li>
+</ol><h2 id="create-the-agent"><span>Create the Agent</span></h2><p>The first step in creating an agent is the guided setup. This setup process walks through creating an agent, associating topics, and more. Topics define the range of jobs your agents and copilot can handle. Actions are the tools they can use to get the jobs done. For example, if a client asks about a topic, what action(s) should the agent produce?</p><ol style="list-style: decimal;">
+<li style="list-style-type: inherit;">In the Setup Quick Find, search for and select <strong>Agents</strong>. 
+<br>
+</li>
+<li style="list-style-type: inherit;">Click <strong>+ New Agent</strong>. Note: If the New Agent button is not present, refresh the page until the button appears.
+<br>
+</li>
+</ol><p><img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent/images/a67379d29b99ef9e253e73d766a58f47_kix.o6bndw6l6r5s.png" alt="New Agent button highlighted." width="699.5" class="image"></p><ol style="list-style: decimal;" start="3">
+<li style="list-style-type: inherit;">Select <strong>Agentforce Service Agent</strong> as the type.
+<br>
+</li>
+<li style="list-style-type: inherit;">Click <strong>Next</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">
+<strong>Unselect</strong> these topics (click the <strong>Added</strong> button) so that General FAQ is the only remaining topic: 
+<br><ul style="list-style: disc;">
+<li style="list-style-type: inherit;">Case Management
+<br>
+</li>
+<li style="list-style-type: inherit;">Account Management
+<br>
+</li>
+<li style="list-style-type: inherit;">Reservation Management
+<br>
+</li>
+<li style="list-style-type: inherit;">Delivery Issues
+<br>
+</li>
+<li style="list-style-type: inherit;">Order Inquiries
+<br>
+</li>
+<li style="list-style-type: inherit;">Escalation
+<br>
+</li>
+</ul>
+</li>
+<li style="list-style-type: inherit;">Feel free to review the prebuilt action for the General FAQ topic by clicking See Included Actions. Click <strong>Next</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Change the Name to <span><code>CC Service Agent</code></span> and ensure the API Name updates to <strong>CC_Service_Agent</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Enter this info for Company:<strong> </strong><span><code>Coral Cloud Resorts provides customers with exceptional destination activities, unforgettable experiences, and reservation services, all backed by a commitment to top-notch customer service.</code></span>
+<br>
+</li>
+<li style="list-style-type: inherit;">Select <strong>EinsteinServiceAgent</strong> as the Agent User.
+<br>
+</li>
+<li style="list-style-type: inherit;">IMPORTANT: Before you proceed, double check that the agent name and API name are exactly like they are listed in step 7 above, then click <strong>Next</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">For now, Data Cloud won’t be used. Click <strong>Create</strong>.<s>
+</s><br>
+</li>
+</ol><h3>Add Custom Topics and Actions</h3><p>Topics and actions can be created and customized using Agent Builder. Note: It’s not recommended to use the standard query and summarization actions with a public facing agent, so instead use custom actions to interact with the data. 
+</p><ol style="list-style: decimal;"><li style="list-style-type: inherit;">From the Agent Builder, click <strong>New</strong> and select <strong>New Topic</strong>. Note: If the New button does not appear, return to the agent setup page and toggle the Agentforce toggle to off, then back to on again.
+<br>
+</li></ol><p><img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent/images/6a7687282e0e0821ce129ec47adcbdb5_kix.t09r8daq8gpu.png" alt="Highlighted New Topic selection." width="475.0567164179104" class="image"></p><ol style="list-style: decimal;" start="2"><li style="list-style-type: inherit;">In the modal, configure the Start element as follows:
+<br>
+</li></ol><table class="featureTable">
+<thead class="thead"><tr>
+<th scope="col" rowspan="1" colspan="1" style="vertical-align:TOP;"><p><strong>Field
+</strong></p></th>
+<th scope="col" rowspan="1" colspan="1" style="vertical-align:TOP;"><p><strong>Value
+</strong></p></th>
+</tr></thead>
+<tbody class="tbody">
+<tr>
+<td scope="" rowspan="1" colspan="1" style="vertical-align:TOP;"><p>Topic Label
+</p></td>
+<td scope="" rowspan="1" colspan="1" style="vertical-align:TOP;"><span><code>Experience Management</code></span></td>
+</tr>
+<tr>
+<td scope="" rowspan="1" colspan="1" style="vertical-align:TOP;"><p>Classification Description
+</p></td>
+<td scope="" rowspan="1" colspan="1" style="vertical-align:TOP;"><span><code>This topic addresses customer inquiries and issues related to booking experiences at Coral Cloud Resort, including making reservations, modifying bookings, and answering queries about experience details.</code></span></td>
+</tr>
+<tr>
+<td scope="" rowspan="1" colspan="1" style="vertical-align:TOP;"><p>Scope
+</p></td>
+<td scope="" rowspan="1" colspan="1" style="vertical-align:TOP;"><span><code>The agent's job is to assist users in navigating and managing bookings for different experiences offered by Coral Cloud Resort, ensuring a seamless customer service experience by providing accurate information and resolving issues promptly.</code></span></td>
+</tr>
+</tbody>
+</table><ol style="list-style: decimal;" start="3">
+<li style="list-style-type: inherit;">At the bottom, click <strong>Add Instructions five (5) times</strong>. There will now be six blank instruction text boxes.
+<br>
+</li>
+<li style="list-style-type: inherit;">Add these Instructions:
+<br>
+</li>
+</ol><table class="featureTable">
+<thead class="thead"><tr>
+<th scope="col" rowspan="1" colspan="1" style="vertical-align:TOP;"><p><strong>Field
+</strong></p></th>
+<th scope="col" rowspan="1" colspan="1" style="vertical-align:TOP;"><p><strong>Value
+</strong></p></th>
+</tr></thead>
+<tbody class="tbody">
+<tr>
+<td scope="" rowspan="1" colspan="1" style="vertical-align:TOP;"><p>1st Instruction</p></td>
+<td scope="" rowspan="1" colspan="1" style="vertical-align:TOP;"><span><code>If a customer would like more information on Activities or Experiences, you should run the action 'Get Experience Details' and then summarize the results with improved readability. Always ensure you know the customer before running this action.</code></span></td>
+</tr>
+<tr>
+<td scope="" rowspan="1" colspan="1" style="vertical-align:TOP;"><p>2nd Instruction</p></td>
+<td scope="" rowspan="1" colspan="1" style="vertical-align:TOP;"><span><code>If the customer is not known, you must always ask for their email address and their membership number to get their Contact record by running the action 'Get Customer Details' before running any other actions.</code></span></td>
+</tr>
+<tr>
+<td scope="" rowspan="1" colspan="1" style="vertical-align:TOP;"><p>3rd Instruction
+</p></td>
+<td scope="" rowspan="1" colspan="1" style="vertical-align:TOP;"><span><code>Whenever a date is provided, convert the date to YYYY-MM-DD format and ensure that the date is not in the past before using it for the 'Get Sessions' action. If a past date is provided, explain to the client the date must be future.</code></span></td>
+</tr>
+<tr>
+<td scope="" rowspan="1" colspan="1" style="vertical-align:TOP;"><p>4th Instruction
+</p></td>
+<td scope="" rowspan="1" colspan="1" style="vertical-align:TOP;"><span><code>If asked to get sessions for the experience use the 'Get Sessions' action. Ask for the Date of the sessions if not provided. Use the Id of the Experience__c from the 'Get Experience Details'. Do not use the experience name, this must be an ID.</code></span></td>
+</tr>
+<tr>
+<td scope="" rowspan="1" colspan="1" style="vertical-align:TOP;"><p>5th Instruction
+</p></td>
+<td scope="" rowspan="1" colspan="1" style="vertical-align:TOP;"><span><code>If asked to book, use the action 'Create Booking'. The Contact__c is the contact ID from the 'Get Customer Details'. The Session__c is the ID of the session from the action 'Get Sessions'. If multiple sessions are present, ask to select one of the sessions and use that Session as the ID for the Session__c. Prompt for the Number of Guests and use that for the Number_of_Guests__c.</code></span></td>
+</tr>
+<tr>
+<td scope="" rowspan="1" colspan="1" style="vertical-align:TOP;"><p>6th Instruction
+</p></td>
+<td scope="" rowspan="1" colspan="1" style="vertical-align:TOP;"><span><code>If asked to recommend experiences that a user might be interested in, use the 'Generate Personalized Schedule' Action to generate a schedule based on a contacts interests. Use the contact record from 'Get Customer Details' and pass it into the Contact input.</code></span></td>
+</tr>
+</tbody>
+</table><ol style="list-style: decimal;" start="5">
+<li style="list-style-type: inherit;">Leave everything else as is and click <strong>Next</strong>. 
+<br>
+</li>
+<li style="list-style-type: inherit;">Custom actions will be added to this topic so skip adding any of the standard actions and click <strong>Finish</strong>.
+<br>
+</li>
+</ol><h3>Add the Get Experience Details Action to the Agent</h3><p>Create and attach the Get Experience Details action to the Experience Management topic so the agent can produce details about each experience.</p><ol style="list-style: decimal;">
+<li style="list-style-type: inherit;">Click the <strong>Experience Management</strong> topic.
+<br>
+</li>
+<li style="list-style-type: inherit;">Click the <strong>This Topic’s Actions</strong> subtab.
+<br>
+</li>
+</ol><p><img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent/images/52747c15417c034eae5512cb8fa65d3f_kix.i3cslq4wm28v.png" alt="This Topic’s Actions tab highlighted." width="438.5" class="image"></p><ol style="list-style: decimal;" start="3">
+<li style="list-style-type: inherit;">Click <strong>New </strong>and select<strong> Add Action</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Select <strong>Flow</strong> as the Reference Action Type.
+<br>
+</li>
+<li style="list-style-type: inherit;">Select <strong>Get Experience Details</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Leave the other options as is, and click <strong>Next</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">For experienceName, check <strong>Require Input</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">For experienceRecord, check <strong>Show in conversation</strong>.
+<br>
+</li>
+</ol><p><img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent/images/eae31f6c4ebb9236786377a6a4bf0f53_kix.v63u4dthttgx.png" alt="A configured action for agent with designated checkboxes checked." width="577.7764876632801" class="image"></p><ol style="list-style: decimal;" start="9"><li style="list-style-type: inherit;">Click <strong>Finish</strong>. Note: If the API name is already in use error appears, it is because this action has already been created. Return to the New Action button and select Add from Asset Library. 
+<br>
+</li></ol><h3>Add an Action to Validate Customer Details</h3><p>For security purposes, the agent needs to validate that the customer is who they say they are. In this case, the agent validates key contact details such as email and membership number. 
+</p><p><s>
+</s></p><ol style="list-style: decimal;">
+<li style="list-style-type: inherit;">With the This Topic’s Actions subtab still selected, click <strong>New </strong>and select<strong> Add Action</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Select <strong>Flow</strong> as the Reference Action Type.
+<br>
+</li>
+<li style="list-style-type: inherit;">Select <strong>Get Customer Details</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Leave the other options as is, and click <strong>Next</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">For email, check <strong>Require Input</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">For memberNumber, check <strong>Require Input</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">For contact, check <strong>Show in conversation</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Click <strong>Finish</strong>.<s>
+</s><br>
+</li>
+</ol><h3>Add an Action to Get Session Records</h3><p>Use the Get Sessions flow to get the available session records for each experience.
+</p><ol style="list-style: decimal;">
+<li style="list-style-type: inherit;">With the This Topic’s Actions subtab still selected, click <strong>New </strong>and select<strong> Add Action</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Select <strong>Flow</strong> as the Reference Action Type.
+<br>
+</li>
+<li style="list-style-type: inherit;">Select <strong>Get Sessions</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Leave the other options as is, and click <strong>Next</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">For experienceId, check <strong>Require Input</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">For startDate, check <strong>Require Input</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">For sessions, check <strong>Show in conversation</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Click <strong>Finish</strong>.
+<br>
+</li>
+</ol><h3>Add an Action to Generate a Personalized Schedule</h3><p>The agent needs to be able to give personalized recommendations based on the current contact’s schedule. The client shouldn’t get a recommendation for jet skiing if they already have that experience booked.
+</p><ol style="list-style: decimal;">
+<li style="list-style-type: inherit;">With the This Topic’s Actions subtab still selected, click <strong>New</strong> and select <strong>Add Action</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Select <strong>Prompt Template</strong> as the Reference Action Type.
+<br>
+</li>
+<li style="list-style-type: inherit;">Select <strong>Generate Personalized Schedule</strong> as the Reference Action.
+<br>
+</li>
+<li style="list-style-type: inherit;">Leave the other options as is and click <strong>Next</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Configure the instructions as follows:
+<br>
+</li>
+</ol><table class="featureTable">
+<thead class="thead"><tr>
+<th scope="col" rowspan="1" colspan="1" style="vertical-align:TOP;"><p><strong>Field
+</strong></p></th>
+<th scope="col" rowspan="1" colspan="1" style="vertical-align:TOP;"><p><strong>Value
+</strong></p></th>
+</tr></thead>
+<tbody class="tbody">
+<tr>
+<td scope="" rowspan="1" colspan="1" style="vertical-align:TOP;"><p>Agent Action Instructions</p></td>
+<td scope="" rowspan="1" colspan="1" style="vertical-align:TOP;"><span><code>Generate a personalized schedule that includes the time and location of resort experiences that are available today, and that match the guest's interests.</code></span></td>
+</tr>
+<tr>
+<td scope="" rowspan="1" colspan="1" style="vertical-align:TOP;"><p>Contact Input Instructions</p></td>
+<td scope="" rowspan="1" colspan="1" style="vertical-align:TOP;"><span><code>Contact for which the personalized schedule should be generated. Must be a valid JSON representing the contact info, chained from having executed the Get Customer Details action.</code></span></td>
+</tr>
+</tbody>
+</table><ol style="list-style: decimal;" start="6">
+<li style="list-style-type: inherit;">For the Prompt Response Output, check <strong>Show in conversation</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Click <strong>Finish</strong>.
+<br>
+</li>
+</ol><h3>Add an Action to Create a Booking</h3><p>When the agent provides excellent recommendations and the client wants to book an experience, what should happen? Hint, the agent will create a new record within Salesforce.
+</p><ol style="list-style: decimal;">
+<li style="list-style-type: inherit;">Click <strong>New </strong>and select<strong> Add Action</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Select <strong>Flow</strong> as the Reference Action Type.
+<br>
+</li>
+<li style="list-style-type: inherit;">Select <strong>Create Experience Session Booking</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Leave the other options as is, and click <strong>Next</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">For Contact_Id, check <strong>Require Input</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">For Guests, check <strong>Require Input</strong> and <strong>Collect data from user</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">For Session_Id, check <strong>Require Input</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">For Booking output, check <strong>Show in conversation</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">For Output_Message output, check <strong>Show in conversation</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Click <strong>Finish</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Click <strong>Activate</strong>.
+<br>
+</li>
+</ol><p><img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent/images/472f4e6366e97263584601ed992a7df5_kix.a4tj5qomz5w5.png" alt="Activate button highlighted." width="546.5" class="image"></p><h2 id="test-the-agent"><span>Test the Agent</span></h2><p>Start a conversation to preview how your agent builds a plan and executes actions based on user interactions. As interactions happen with the agent, notice the panel in the middle of the screen that displays exactly what the agent is executing.</p><ol style="list-style: decimal;"><li style="list-style-type: inherit;">While still in the Agent Builder, click <strong>Refresh</strong> (circular arrow) in the top right corner of the <strong>Conversation Preview</strong>.
+<br>
+</li></ol><p><img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent/images/95cd171a4efe0b455a0ce7bdb6637bb0_kix.vcju4ralzec3.png" alt="The Conversation Preview window with the refresh button highlighted." width="787.5" class="image"></p><ol style="list-style: decimal;" start="2">
+<li style="list-style-type: inherit;">Don't worry if the dots are spinning in the Conversation Preview, go ahead and enter this prompt: <span><code>Can you let me know more about the full moon beach party experience?</code></span> and press your <strong>Return/Enter</strong> key.
+<br>
+</li>
+<li style="list-style-type: inherit;">Reminder: email address is <span><code>sofiarodriguez@example.com</code></span> and <span><code>10008155</code></span> is the membership number. Press your <strong>Return/Enter</strong> key. Keep answering the agent’s questions and book a session.
+<br>
+</li>
+<li style="list-style-type: inherit;">Click the <strong>back arrow </strong>to return to Setup.
+<br>
+</li>
+</ol><p><img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent/images/13638c48bf992b5210d2bb6ee2a68a75_kix.6op1qk2bw8dj.png" alt="Highlighted back arrow to get back to Setup." width="303.5" class="image"><s>
+</s></p><h2 id="publish-and-update"><span>Publish and Update</span></h2><p>Publish the web deployment and update the flow.
+</p><ol style="list-style: decimal;">
+<li style="list-style-type: inherit;">In the Setup Quick Find, search for and select <strong>Embedded Service Deployments</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Select the <strong>ESA Web Deployment</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Click<strong> Publish </strong>to republish with the latest additions. Note: The deployment can take up to 10 minutes but no need to wait, proceed to the next step.
+<br>
+</li>
+</ol><h3>Re-route the Flow</h3><p>Now update the existing flow to route work to the newly created Service Agent.
+</p><ol style="list-style: decimal;">
+<li style="list-style-type: inherit;">In the Setup Quick Find, search for and select <strong>Flows</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Click on the <strong>Route to ESA</strong> flow.
+<br>
+</li>
+<li style="list-style-type: inherit;">Click the <strong>Route to ESA </strong>component <img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent/images/c313ad777e680dc7574e7656f7c8a6c1_kix.9yjcnx6fxlz2.png" alt="Route to ESA component" width="128.27484924316406" class="image"> and select <strong>Edit Element</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Select these values in the Set Input Values section:
+<br>
+</li>
+</ol><table class="featureTable">
+<thead class="thead"><tr>
+<th scope="col" rowspan="1" colspan="1" style="vertical-align:TOP;"><p><strong>Field
+</strong></p></th>
+<th scope="col" rowspan="1" colspan="1" style="vertical-align:TOP;"><p><strong>Value
+</strong></p></th>
+</tr></thead>
+<tbody class="tbody">
+<tr>
+<td scope="" rowspan="1" colspan="1" style="vertical-align:TOP;"><p>Route To
+</p></td>
+<td scope="" rowspan="1" colspan="1" style="vertical-align:TOP;"><p><strong>Agentforce Service Agent
+</strong></p></td>
+</tr>
+<tr>
+<td scope="" rowspan="1" colspan="1" style="vertical-align:TOP;"><p>Agentforce Service Agent
+</p></td>
+<td scope="" rowspan="1" colspan="1" style="vertical-align:TOP;"><p><strong>CC Service Agent
+</strong></p></td>
+</tr>
+<tr><td scope="" rowspan="1" colspan="2" style="vertical-align:TOP;"><p>Note: If CC Service Agent doesn’t show up as an option, return to Agent Builder for the CC Service Agent and make sure it’s activated.
+</p></td></tr>
+</tbody>
+</table><ol style="list-style: decimal;" start="5">
+<li style="list-style-type: inherit;">Click <strong>Save As New Version</strong>. 
+<br>
+</li>
+<li style="list-style-type: inherit;">Keep everything as is and click <strong>Save</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Click <strong>Activate</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Click the <strong>back arrow</strong> to return to Setup.
+<br>
+</li>
+</ol><p><img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent/images/5d82f19b2272cb4e271f3ac595bdb85b_kix.b5gdinu1xzdn.png" alt="Back arrow highlighted in the Flow Builder." width="232.735" class="image"></p><h2 id="add-the-agent-to-the-coral-cloud-site"><span>Add the Agent to the Coral Cloud Site</span></h2><p>Lastly, embed the chat component to the Coral Cloud Experience Cloud site.</p><ol style="list-style: decimal;">
+<li style="list-style-type: inherit;">In the Setup Quick Find, search and select <strong>All Sites</strong>.
+<br>
+</li>
+<li style="list-style-type: inherit;">Click <strong>Builder</strong> next to the coral-cloud<strong> </strong>site. 
+<br>
+</li>
+<li style="list-style-type: inherit;">Click the <strong>Components </strong>widget <img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent/images/a59d5659d1586e11b87a83be0f08e2ec_kix.g8z378imf3pr.png" alt="Components widget" width="23.83181359863281" class="image"> .
+<br>
+</li>
+<li style="list-style-type: inherit;">Search <strong>Embedded Messaging</strong> and drag and drop the component over the Book an Experience of a Lifetime section. Note: exact placement is up to you, and it may take a few seconds for the component to appear.
+<br>
+</li>
+</ol><p><img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent/images/295eb5e04728dadea85dd363be18c0a5_kix.5ya3zr7azbuc.png" alt="Embedded Messaging added to the Experience Cloud site." width="662.7780429594272" class="image"></p><ol style="list-style: decimal;" start="5">
+<li style="list-style-type: inherit;">Leave the default settings.
+<br>
+</li>
+<li style="list-style-type: inherit;">Click <strong>Publish</strong> in the upper right corner. 
+<br>
+</li>
+<li style="list-style-type: inherit;">Click <strong>Publish </strong>in the confirmation window.
+<br>
+</li>
+<li style="list-style-type: inherit;">Click <strong>Got It</strong>.
+<br>
+</li>
+</ol><h3>View the Agent as a Customer</h3><p>The big reveal. Time to interact with the new agent.</p><ol style="list-style: decimal;">
+<li style="list-style-type: inherit;">Click the <strong>Experience Builder menu</strong> <img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent/images/bbd72ff753e88d31e0a777672827d50f_kix.9v97uq7rty5h.png" alt="Experience Builder menu icon" width="28.83304285714286" class="image"> . 
+<br>
+</li>
+<li style="list-style-type: inherit;">Select <strong>View coral-cloud </strong>to open the published coral cloud site. Note: It may take a few minutes for the site to publish. Go ahead and verify the challenge below while you wait for your Experience Cloud site to publish.
+<br>
+</li>
+<li style="list-style-type: inherit;">Click on the <strong>Messaging icon</strong> <img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent/images/8c7684f6750b8669eaa0ff3c9b2770d5_kix.y6n0sp9b7f9k.png" alt="messaging icon" width="33.599999999999994" class="image"> in the lower right corner to start interacting with the new agent. Wait for the agent to say hi and then try out the following prompt:
+<br>
+</li>
+</ol><ol style="list-style: decimal;"><ul style="list-style: disc;">
+<li style="list-style-type: inherit;"><span><code>Can you let me know about the Underground Cave Exploration?</code></span></li>
+<li style="list-style-type: inherit;">Reminder: email address is <span><code>sofiarodriguez@example.com</code></span> and <span><code>10008155</code></span> is the membership number.
+<br>
+</li>
+<li style="list-style-type: inherit;">Keep answering the agent’s questions and book a session.
+<br>
+</li>
+</ul></ol><div class="box message info" style="margin-left: 0.0px"><div class="inner"><div class="bd"><div class="media">
+<img src="https://res.cloudinary.com/hy4kyit2a/image/upload/doc/trailhead/en-usb473bb5ea1b7e61dfb07e6a7e547de6b.gif" alt="Note" role="presentation" class="img mtm"><div class="mediaBd"><div class="message-media-content"><p>Agent not responding as expected? Try re-publishing the Experience Cloud site. The proper connection between the agent and the Experience Cloud site may take a few minutes on initial site publish.</p></div></div>
+</div></div></div></div><p>Coral Cloud Resorts now has a shiny new Agentforce Service Agent that can not only give personalized experience recommendations, but also book experiences for clients. Bring on the busy season! </p><h2 id="resources"><span>Resources</span></h2><ul style="list-style: disc;">
+<li style="list-style-type: inherit;">
+<a href="https://trailhead.salesforce.com/content/learn/modules/agentforce-service-agent-quick-look" rel="noreferrer noopener" target="_blank"><em>Trailhead</em>: Agentforce Service Agent: Quick Look</a>
+</li>
+<li style="list-style-type: inherit;">
+<a href="https://help.salesforce.com/s/articleView?id=sf.configure_service_agent_managers.htm&amp;type=5" rel="noreferrer noopener" target="_blank"><em>Salesforce Help</em>: Configure Service Agent Managers</a>
+</li>
+<li style="list-style-type: inherit;">
+<a href="https://help.salesforce.com/s/articleView?id=service.service_agent_escalation.htm&amp;type=5" rel="noreferrer noopener" target="_blank"><em>Salesforce Help</em>: Escalate Conversations to a Service Rep</a>
+</li>
+<li style="list-style-type: inherit;">
+<a href="https://www.salesforce.com/artificial-intelligence/use-cases/" rel="noreferrer noopener" target="_blank"><em>Website</em>: Salesforce AI Use Case Library</a>
+</li>
+<li style="list-style-type: inherit;">
+<a href="https://developer.salesforce.com/docs/einstein/genai/guide/get-started-copilot.html" rel="noreferrer noopener" target="_blank"><em>Salesforce Developer Documentation</em>: Get Started with Agentforce Agents and Copilot</a>
+</li>
+<li style="list-style-type: inherit;">
+<a href="https://developer.salesforce.com/blogs/2024/03/build-custom-copilot-actions-using-apex" rel="noreferrer noopener" target="_blank"><em>Salesforce Developers Blog</em>: Build Custom Actions Using Apex</a>
+</li>
+</ul>
+</div>
+
+<div id='challenge'>
+<div data-react-class="challenge/Challenge" data-react-props="{&quot;authenticated&quot;:false,&quot;msa_signed&quot;:false,&quot;challenge&quot;:{&quot;unit_uid&quot;:&quot;02e90479-9ba1-6b49-14ba-00c8ee4eb4b0&quot;,&quot;api_name&quot;:&quot;configure-an-agentforce-service-agent&quot;,&quot;content_uid&quot;:&quot;02df53f6-9b24-a190-7c11-8f8e20a4b00e&quot;,&quot;module_uid&quot;:&quot;02df53f6-9b24-a142-4121-995d47ec0c2d&quot;,&quot;module_api_name&quot;:&quot;quick-start-build-your-first-agent-with-agentforce&quot;,&quot;questions&quot;:[],&quot;points_earned&quot;:null,&quot;points&quot;:500.0,&quot;points_next&quot;:500.0,&quot;completed&quot;:false,&quot;attempts&quot;:0,&quot;type&quot;:&quot;assessment&quot;,&quot;description&quot;:&quot;&quot;,&quot;requirements&quot;:[],&quot;title&quot;:&quot;&quot;,&quot;unit_type&quot;:&quot;step&quot;,&quot;show_recommendations_on_complete&quot;:null,&quot;hide_org_picker&quot;:false,&quot;badge_ratings&quot;:{&quot;show_badge_ratings&quot;:true,&quot;api_name&quot;:&quot;quick-start-build-your-first-agent-with-agentforce&quot;,&quot;trackable&quot;:true},&quot;preview_mode&quot;:false,&quot;assessment_evaluation_context&quot;:{&quot;type&quot;:&quot;hoc&quot;,&quot;title&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;requirements&quot;:[],&quot;uuid&quot;:&quot;da2f3e99-e877-46c3-96eb-fcc97c26cfea&quot;,&quot;assessment_engine_support&quot;:true,&quot;metadata&quot;:{&quot;version&quot;:&quot;1.0&quot;,&quot;authorization_requirements&quot;:{&quot;account_type&quot;:&quot;salesforce_org&quot;,&quot;product_label&quot;:&quot;Agentforce&quot;,&quot;custom_template_required&quot;:true}},&quot;authorized_account_type&quot;:&quot;salesforce_org&quot;,&quot;authorized_accounts&quot;:[],&quot;https_endpoint_supported&quot;:null},&quot;disconnect_mulesoft_anypoint_account_path&quot;:&quot;/auth/mulesoft_anypoint/delete&quot;,&quot;trial_cta&quot;:null},&quot;next_challenge&quot;:{&quot;next_challenge&quot;:false,&quot;next_parent&quot;:false,&quot;next_trailmix_item&quot;:false,&quot;all_parents&quot;:{&quot;url&quot;:&quot;/projects&quot;,&quot;type&quot;:&quot;project&quot;},&quot;parent_trailmix&quot;:{}},&quot;sharing&quot;:{&quot;app_id&quot;:140586622674265,&quot;content&quot;:{&quot;title&quot;:&quot;Quick Start: Build Your First Agent with Agentforce&quot;,&quot;description&quot;:&quot;Create an Agentforce Service Agent to assist with recommendations and bookings.&quot;},&quot;public&quot;:true},&quot;rewards&quot;:null,&quot;tp_help_link&quot;:&quot;\u003ca rel=\&quot;noopener noreferrer\&quot; target=\&quot;_blank\&quot; href=\&quot;//trailhead.salesforce.com/content/learn/modules/trailhead_playground_management\&quot;\u003eTrailhead Playground Management\u003c/a\u003e&quot;,&quot;namespace_id&quot;:&quot;learn&quot;,&quot;from_learning_path&quot;:false}" data-react-cache-id="challenge/Challenge-0"></div>
+</div>
+</article>
+</div>
+</div>
+
+<script type='application/ld+json'>
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{"@type":"ListItem","position":1,"name":"Learn","item":"https://trailhead.salesforce.com"},{"@type":"ListItem","position":2,"name":"Quick Start: Build Your First Agent with Agentforce","item":"https://trailhead.salesforce.com/content/learn/projects/quick-start-build-your-first-agent-with-agentforce"},{"@type":"ListItem","position":3,"name":"Configure an Agentforce Service Agent"}]
+}
+
+</script>
+
+</div>
+
+</main>
+
+  <th-footer api-path="/api/v1/ui/footer.js" locale=""></th-footer>
+
+</div>
+    <tds-modal
+  data-modal-name-value="feedback_modal"
+  data-modal-cookie-value="true"
+  data-controller="modal"
+  size=""
+  open="false"
+  assistive-text="assistive text"
+  >
+  <div slot="heading">        Share your Trailhead feedback over on Salesforce Help.
+</div>
+  <div slot="content">        <p>We&#39;d love to hear about your experience with Trailhead - you can now access the new feedback form anytime from the Salesforce Help site.</p>
+</div>
+  <div slot="footer">        <div style="display: flex; justify-content: right;">
+          <a
+  data-controller="button-link"
+  class="button-link "
+  href="/help?article=Trailhead-Help-Merge-with-Salesforce-Help-FAQ" target="_blank" data-cta_type="help_feedback_learn_more_link" data-unit_name="configure-an-agentforce-service-agent" data-page_location="feedback_modal" data-locale="en"
+>
+
+  <span class="button-link__text">Learn More</span>
+</a>
+
+
+          <a
+  data-controller="button-link"
+  class="button-link button-link--brand"
+  href="https://help.salesforce.com/services/auth/sso/trailheadlogincommunity?startURL=%2Fs%2Fcase-submission%3FtopicId%3Da6CAE0000003qPO2AY_en_US_P%26badgeName%3Dconfigure-an-agentforce-service-agent" target="_blank" data-trigger_evt_name="toggleModalfeedback_modal" data-cta_type="help_feedback_continue_link" data-unit_name="configure-an-agentforce-service-agent" data-page_location="feedback_modal" data-locale="en"
+>
+
+  <span class="button-link__text">Continue to Share Feedback</span>
+</a>
+
+
+        </div>
+</div>
+</tds-modal>
+
+
+
+
+<script>
+  if (typeof dataLayer === 'undefined') {
+    dataLayer = [];
+  }
+</script>
+<noscript>
+<iframe height='0' src='//www.googletagmanager.com/ns.html?id=GTM-KJPMZK' style='display:none;visibility:hidden' width='0'></iframe>
+</noscript>
+<script type="text/plain" class="optanon-category-1" charset="UTF-8">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KJPMZK');
+
+</script>
+<script>
+  (function(global) {
+    if(!global.Trailhead) {
+      global.Trailhead = {};
+    }
+  
+    global.Trailhead.gtmDebugging = false;
+  })(window);
+</script>
+<script src="/assets/metrics/interaction_tracking-855ada6c1cb4b23a59e6f2b594bd51edf698d582656ea18eb52c1f57c75f2152.js"></script>
+<script type='module'>
+import { setTbidUserInfoResolver } from "https://www.salesforce.com/c/public/app/mjs/identity.js";
+setTbidUserInfoResolver( async () => {
+  const tbid = window.localStorage.getItem('tbid');
+  return { id: tbid };
+});
+</script>
+<div id='interaction-studio-placeholder'></div>
+<script type="text/plain" class="optanon-category-4" charset="UTF-8">let addInteractionStudioBeacon = () => {
+  let isTagSrc = "//cdn.evgnet.com/beacon/salesforce/sf_shared_prod/scripts/evergage.min.js";
+  let isPlaceholder = document.getElementById("interaction-studio-placeholder");
+  let isTag = document.createElement("script");
+  isTag.setAttribute("src", isTagSrc);
+  isTag.setAttribute("defer", true);
+  isPlaceholder.replaceWith(isTag);
+}
+
+let checkIfGaLoaded = () => {
+  return new Promise((resolve, reject) => {
+    let timeStart = Date.now();
+    const TIMEOUT = 5000;
+
+    let _isLoaded = function() {
+      if (Date.now() - timeStart > TIMEOUT) {
+        reject('Timeout. Google analytics expected but not loaded');
+        return;
+      }
+      if (window.ga && ga.create) {
+        resolve();
+        return;
+      } else {
+        setTimeout(_isLoaded, 500);
+      }
+    };
+
+  _isLoaded();
+  });
+}
+
+checkIfGaLoaded().then(addInteractionStudioBeacon, console.error);
+
+</script>
+
+
+<style>
+:root {
+  --tds-z-index-toast: 90000;
+  --tds-toaster-offset-top: 150px;
+}
+</style>
+
+
+<tds-toaster></tds-toaster>
+
+<script src="/packs/js/toaster-de4ab8f14d6349a56818.js" defer="defer"></script>
+
+<script>
+  var Trailhead = Trailhead || {};
+</script>
+</body>
+</html>
